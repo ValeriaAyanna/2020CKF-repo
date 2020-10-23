@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="..js/sticky.js"></script>
+	<title>The Close-Knit Family | Products</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Affordable and professional web design">
+	<meta name="keywords" content="web design, affordable web design, front end developer, website builder, website architect">
+	<meta name="author" content="Brad Traversy">
+	
+</head>
+<body class="body-container">
+	<header class="header-container" id="myHeader">
+
+			<!-- Top Purple Stripe -->
+			<div class="top_stripe">
+				<text>979-324-1865 | valeriefelder@closeknitfamily.com</text>
+			</div>
+
+			<!-- Lower Header with Nav -->
+			<div class="bottom_header">
+			
+				<!-- Logo -->
+				<a href="../html/index.html" ><img class="logo" src="../img/FINAL LOGO ZEEbuiltdec2018 - Copy.png" width=14% /></a>
+			
+				<!-- Navigation Bar -->
+				<nav>
+					<ul>
+						<li><a class="header_links" href="../html/index.html">HOME</a></li>
+						<li><a class="header_links" href="../html.about.html">ABOUT</a></li>
+						<li><a class="header_links" href="../html/contact.html">CONTACT</a></li>
+						<li class="dropdown"><a class="header_links" class="dropbtn">PROGRAMS & RESOURCES</a>
+							<div class="dropdown-content">
+								<a class="header_links" href="../html/programs.html">PROGRAMS</a>
+								<a class="header_links" href="#">CORE VALUES</a>
+								<a class="header_links" href="#">MEDIA RESOURCES</a>
+							</div>
+						</li>
+						<li><a class="header_links" href="../html/blog.html">BLOG</a></li>
+						<li><a class="header_links" href="../html/products.html" id="you_are_here">PRODUCTS</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+
+	<!--
+	<div class="main_coming_soon">
+		<section id="coming_soon">
+			<h1>Hey! No peeking!</h1>
+			<p>We're glad you're excited to see Valerie's products!</p>
+			<p>Our products page is currently under construction, but in the meantime
+			you can keep up with Valerie on Facebook, YouTube, and Instagram!</p>
+		</section>
+		
+
+	</div>
+	-->
+
+	<div class="main">
+		<section class="products">
+
+			<!-- Product One -->
+			<div class="prod_img">
+				<img src="../img/smartmockups_jtem0znt.png" width=93% />
+			</div>
+			<div class="prod_descrip">
+				<h2>Life In Sturdy Stitches: The Makings of a Close-Knit Family</h2>
+				<p>Valerie's celebrated premiere parenting book, Newly Released in May 2018! It takes 
+				parents back to the basics of raising children from a strong family base. A military 
+				veteran with unique perspective regarding team building, Valerie is the Family Team 
+				Builder who took military core values of integrity, respect and responsibility into the
+				home, mixing them with a mother's love to nurture her own 9 children.   </p>
+
+				<a href="#"> <!-- was a div with plain text instead of button element-->
+					<button class="check_1 prod_price" disabled>Price: $12.49</button>
+				</a>	
+
+				<a href="https://www.amazon.com/LIFE-STURDY-STITCHES-Makings-Close-Knit-ebook/dp/B07D3CQ5CZ/ref=sr_1_1?ie=UTF8&qid=1527568922&sr=8-1&keywords=life+in+sturdy+stitches"
+				target="_blank">
+					<button id="prod_button" class="check_2">Buy on Amazon!</button>
+				</a>
+
+				<a href="https://www.barnesandnoble.com/w/life-in-sturdy-stitches-valerie-felder/1128594861?ean=9781545633069"
+				target="_blank">
+						<button id="prod_button" class="check_3">Buy on Barnes & Noble!</button>
+				</a>
+	
+			</div>
+		</section>
+
+		<section class="products">
+			<!-- Product Two -->
+			<div class="prod_img">
+				<img src="../img/smartmockups_jtem4m78.png" width=93% />
+			</div>
+			<div class="prod_descrip">
+				<h2>Table Talk Guidebook</h2>
+				<p>This book empowers the family by confronting and resolving a key issue: Communications 
+				It's the no-brainer conversation tool for every home. Children learn that home is a safe place for them to express 
+				their thoughts and feelings. Parents learn to encourage communications and to hear the hearts of their children.
+				A bonus communications-builder section for parents is also included. This easy-to-use book helps parents select topics
+				pertaining to the personality, age or interests of their family. It serves families with children of all ages.</p>
+
+				<a href="#"> <!-- was a div with plain text instead of button element-->
+					<button class="check_1 prod_price" disabled>Price: $16.99</button>
+				</a>	
+
+				<a href="https://www.amazon.com/Table-Talk-Guidebook-Christian-Living/dp/1983659444/ref=sr_1_1?ie=UTF8&qid=1527599304&sr=8-1&keywords=Table+Talk+Guidebook+Felder"
+				target="_blank">
+					<button id="prod_button" class="check_2">Buy on Amazon!</button>
+				</a>
+
+				<a href="#">
+						<button id="unavailable" class="check_3 unavailable" disabled><del color="#707070">Buy on Barnes & Noble!</del></button>
+				</a>
+	
+			</div>
+		</section>
+
+
+	</div>
+
+	<div class="footer">
+		<footer>
+			<section id="subscribe_2_outside">
+				<section id="subscribe_2">
+					<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
+						<h3>SUBSCRIBE TO THE NEWSLETTER</h3>
+						<p class="hidden">
+							<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
+						</p>
+						<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
+						<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
+					</form>
+				</section>
+				<section id="copyright_credit">
+					<p>&copy 2019 by Valerie Felder</p>
+					<p>Web Development by Valeria Felder</p>
+				</section>
+			</section>
+
+			<section id="stay_connected_outside">
+				<section id="stay_connected">
+					<h3>STAY CONNECTED</h3>
+				</section>
+				<section id="contact_2">
+					<h3>CONTACT VALERIE</h3>
+					<p>valeriefelder@thecloseknitfamily.com</p>
+					<p>979.324.1865</p>
+				</section>
+			</section>
+			
+			<section id="useful_links">
+				<h3>USEFUL LINKS</h3>
+				
+				<p><a class="useful_links" href="../html/index.html">Home</a></p>
+				<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
+				<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
+				<p><a class="useful_links" href="">Core Values</a></p>
+				<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
+				<p><a class="useful_links" href="../html/about.html">About</a></p>
+				<p><a class="useful_links" href="">Photos</a></p>
+				
+			</section>
+			
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="..js/sticky.js"></script>
+	<title>The Close-Knit Family | Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Affordable and professional web design">
+	<meta name="keywords" content="web design, affordable web design, front end developer, website builder, website architect">
+	<meta name="author" content="Valeria Felder">
+	
+</head>
+<body class="body-container">
+	<header class="header-container" id="myHeader">
+	<!--	<div class="header"> -->
+
+			<!-- Top Purple Stripe -->
+			<div class="top_stripe">
+				<text>979-324-1865 | valeriefelder@closeknitfamily.com</text>
+			</div>
+
+			<!-- Lower Header with Nav -->
+			<div class="bottom_header">
+			
+				<!-- Logo -->
+				<a href="../html/index.html" ><img class="logo" src="../img/FINAL LOGO ZEEbuiltdec2018 - Copy.png" /></a>
+			
+				<!-- Navigation Bar -->
+				<nav>
+					<ul>
+						<li><a class="header_links" href="../html/index.html">HOME</a></li>
+						<li><a class="header_links" href="../html/about.html">ABOUT</a></li>
+						<li><a class="header_links" href="../html/contact.html" id="you_are_here">CONTACT</a></li>
+						<li class="dropdown"><a class="header_links dropbtn">PROGRAMS & RESOURCES</a> <!-- was orign sep. class=dropbtn -->
+							<div class="dropdown-content">
+								<a class="header_links" href="../html/programs.html">PROGRAMS</a>
+								<a class="header_links" href="#">CORE VALUES</a>
+								<a class="header_links" href="#">MEDIA RESOURCES</a>
+							</div>
+						</li>
+						<li><a class="header_links" href="../html/blog.html">BLOG</a></li>
+						<li><a class="header_links" href="../html/products.html">PRODUCTS</a></li>
+					</ul>
+				</nav>
+			</div>
+		<!-- </div> -->
+	</header>
+
+	<div class="main">
+		<section class="contact_top_image">
+			<p>Let's work together</p>
+		</section>
+
+		<!-- Contact Form using Netlify -->
+		<section>
+			<form name="contact" method="POST" data-netlify="true" id="contact_form">
+				<h2>Contact Form</h2>
+
+				<label id="contact_form_label">Name: </label>
+				<p>
+					<input id="contact_form_input_name_1" type="text" name="name1" placeholder="First" required/> <input id="contact_form_input_name" type="text" name="name2" placeholder="Last" />
+				</p>
+
+				<label id="contact_form_label"> Email: </label>
+				<p>
+					<input id="contact_form_input" type="email" name="email" placeholder="example@email.com" required/>
+				</p>
+
+				<label id="contact_form_label"> Message: </label>
+				<p>
+					<textarea id="contact_form_input" name="message" placeholder="Message..." required></textarea>
+				</p>
+
+				<label id="contact_form_label"> Verification: </label>
+				<div data-netlify-recaptcha="true"></div>
+				
+				<p>
+					<button type="submit" id="contact_page_button">Submit</button>
+				</p>
+			</form>
+		</section>
+
+
+		
+		
+	</div>
+
+	<div class="footer">
+		<footer>
+			<section id="subscribe_2_outside">
+				<section id="subscribe_2">
+					<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
+						<h3>SUBSCRIBE TO THE NEWSLETTER</h3>
+						<p class="hidden">
+							<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
+						</p>
+						<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
+						<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
+					</form>
+				</section>
+				<section id="copyright_credit">
+					<p>&copy 2019 by Valerie Felder</p>
+					<p>Web Development by Valeria Felder</p>
+				</section>
+			</section>
+
+			<section id="stay_connected_outside">
+				<section id="stay_connected">
+					<h3>STAY CONNECTED</h3>
+
+					<div id="social_media_icon_box">
+						<img src="../img/flogo_RGB_HEX-72.png" width="29" /><!-- Facebook -->
+					</div>
+					
+					<div id="social_media_icon_box">
+						<img src="../img/glyph-logo_May2016.png" width="29" /> <!-- Instagram -->
+					</div>
+
+					<div id="social_media_icon_box">
+						<img src="../img/badgeRGB-white.png" width="29" /><!-- YouTube -->
+					</div>
+
+					<div id="social_media_icon_box">
+						<img src="../img/badgeRGB-white.png" width="29" /><!-- Twitter -->
+					</div>
+
+					<div id="social_media_icon_box">
+						<img src="../img/badgeRGB-white.png" width="29" /><!-- Pinterest -->
+					</div>
+					
+				</section>
+				<section id="contact_2">
+					<h3>CONTACT VALERIE</h3>
+					<p>valeriefelder@thecloseknitfamily.com</p>
+					<p>979.324.1865</p>
+				</section>
+			</section>
+			
+			<section id="useful_links">
+				<h3>USEFUL LINKS</h3>
+				
+				<p><a class="useful_links" href="../html/index.html">Home</a></p>
+				<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
+				<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
+				<p><a class="useful_links" href="">Core Values</a></p>
+				<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
+				<p><a class="useful_links" href="../html/about.html">About</a></p>
+				<p><a class="useful_links" href="">Photos</a></p>
+				
+			</section>
+			
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="..js/sticky.js"></script>
+	<title>The Close-Knit Family | Programs</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Affordable and professional web design">
+	<meta name="keywords" content="web design, affordable web design, front end developer, website builder, website architect">
+	<meta name="author" content="Brad Traversy">
+	
+</head>
+<body class="body-container">
+	<header class="header-container" id="myHeader">
+	<!--	<div class="header"> -->
+
+			<!-- Top Purple Stripe -->
+			<div class="top_stripe">
+				<text>979-324-1865</text> | <text>valeriefelder@closeknitfamily.com</text>
+			</div>
+
+			<!-- Lower Header with Nav -->
+			<div class="bottom_header">
+			
+				<!-- Logo -->
+				<a href="../html/index.html" ><img class="logo" src="../img/FINAL LOGO ZEEbuiltdec2018 - Copy.png" width=14% /></a>
+			
+				<!-- Navigation Bar -->
+				<nav>
+					<ul>
+						<li><a class="header_links" href="../html/index.html">HOME</a></li>
+						<li><a class="header_links" href="../html.about.html">ABOUT</a></li>
+						<li><a class="header_links" href="../html/contact.html">CONTACT</a></li>
+						<li class="dropdown"><a class="header_links" class="dropbtn"  id="you_are_here">PROGRAMS & RESOURCES</a>
+							<div class="dropdown-content">
+								<a class="header_links" href="../html/programs.html">PROGRAMS</a>
+								<a class="header_links" href="#">CORE VALUES</a>
+								<a class="header_links" href="#">MEDIA RESOURCES</a>
+							</div>
+						</li>
+						<li><a class="header_links" href="../html/blog.html">BLOG</a></li>
+						<li><a class="header_links" href="../html/products.html">PRODUCTS</a></li>
+					</ul>
+				</nav>
+			</div>
+		<!-- </div> -->
+	</header>
+
+	<div class="main">
+
+
+		<section class="boxes panel uno">
+			<h2>Back To Basics</h2>
+			
+			<div><a href="#"><button id="core_values_button">LEARN MORE</button></a></div>
+		</section>
+		<section class="boxes panel dos">
+			<h2>Buff The Body</h2>
+			
+			<section><a href="#"><button id="insight_button">LEARN MORE</button></a></section>
+		</section>
+		<section class="boxes panel tres">
+			<h2>TUFF Mama</h2>
+			
+			<section><a href="#"><button id="programs_button">LEARN MORE</button></a></section>
+		</section>
+
+		<script>
+			const uno = document.querySelector('.uno');
+			const dos = document.querySelector('.dos');
+			const tres = document.querySelector('.tres');
+			const main = document.querySelector('.main');
+
+			uno.addEventListener('mouseenter', () => {
+				main.classList.add('hover-left');
+			});
+			uno.addEventListener('mouseleave', () => {
+				main.classList.remove('hover-left');
+			});
+
+			dos.addEventListener('mouseenter', () => {
+				main.classList.add('hover-mid');
+			});
+			dos.addEventListener('mouseleave', () => {
+				main.classList.remove('hover-mid');
+			});
+
+			tres.addEventListener('mouseenter', () => {
+				main.classList.add('hover-right');
+			});
+			tres.addEventListener('mouseleave', () => {
+				main.classList.remove('hover-right');
+			});
+		</script>
+		
+		<!-- Do Not Remove Div Or Everything Will Look Shitty -->
+		<div class="container"></div>
+	
+		<!-- Core Values Section Bar -->
+		<section id="divider">
+			<div class="divider">
+				Core Values
+			</div>
+		</section>
+
+		
+		<!-- Tab links -->
+		<div class="tabbed-panel">
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'Integrity')" id="defaultOpen">Integrity</button>
+		  <button class="tablinks" onclick="openCity(event, 'Accountability')">Accountability</button>
+		  <button class="tablinks" onclick="openCity(event, 'Respect')">Respect</button>
+		  <button class="tablinks" onclick="openCity(event, 'Responsiveness')">Responsiveness</button>
+		  <button class="tablinks" onclick="openCity(event, 'Love')">Love</button>
+		</div>
+
+		<!-- Tab content -->
+		<div id="Integrity" class="tabcontent">
+		  <h3>Integrity</h3>
+		  <p>London is the capital city of England. ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England.
+		  ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England.
+		   ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England.
+		    ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England.</p>
+		</div>
+
+		<div id="Accountability" class="tabcontent">
+		  <h3>Accountability</h3>
+		  <p>Paris is the capital of France.</p> 
+		</div>
+
+		<div id="Respect" class="tabcontent">
+		  <h3>Respect</h3>
+		  <p>Tokyo is the capital of Japan.</p>
+		</div>
+
+		<div id="Responsiveness" class="tabcontent">
+		  <h3>Responsiveness</h3>
+		  <p>Responsive websites are the future.</p>
+		</div>
+
+		<div id="Love" class="tabcontent">
+		  <h3>Love</h3>
+		  <p>One love.</p>
+		</div>
+
+		</div>
+
+		<script>
+			document.getElementById("defaultOpen").click();
+
+			function openCity(evt, cityName) {
+			  // Declare all variables
+			  var i, tabcontent, tablinks;
+
+			  // Get all elements with class="tabcontent" and hide them
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+
+			  // Get all elements with class="tablinks" and remove the class "active"
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+
+			  // Show the current tab, and add an "active" class to the button that opened the tab
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+			
+		</script>
+
+
+
+		<!-- Media Resources Section Bar -->
+		<section id="divider">
+			<div class="divider">
+				Media Resources
+			</div>
+		</section>
+
+		<!-- Media Resources Section -->
+		<section class="boxes download_docs">
+			<h2>Download Forms</h2>
+			
+			<div><a href="#"><button id="core_values_button">LEARN MORE</button></a></div>
+		</section>
+		<section class="boxes photo_gallery">
+			<h2>Images</h2>
+			
+			<section><a href="#"><button id="insight_button">LEARN MORE</button></a></section>
+		</section>
+		<section class="boxes more_videos">
+			<h2>More Videos</h2>
+			
+			<section><a href="#"><button id="programs_button">LEARN MORE</button></a></section>
+		</section>
+
+
+		<!-- Testimonial #1 section -->
+		<section class="testimonial">
+			<p id="testimonial_text"><strong>"Valerie speaks from knowledge, experience, and heart which
+			inspires people to move toward success in their own lives and business"</strong></p>
+			<p id="credit">- Dr. Rosemary K. Degner, <em>DBA, Author, Researcher, Professor</em></p>
+		</section>
+	</div>
+
+
+
+	<!-- Footer -->	
+	<div class="footer">
+		<footer>
+			<section id="subscribe_2_outside">
+				<section id="subscribe_2">
+					<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
+						<h3>SUBSCRIBE TO THE NEWSLETTER</h3>
+						<p class="hidden">
+							<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+						</p>
+						<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
+						<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
+					</form>
+				</section>
+				<section id="copyright_credit">
+					<p>&copy 2019 by Valerie Felder</p>
+					<p>Web Development by Valeria Felder</p>
+				</section>
+			</section>
+
+			<section id="stay_connected_outside">
+				<section id="stay_connected">
+					<h3>STAY CONNECTED</h3>
+				</section>
+				<section id="contact_2">
+					<h3>CONTACT VALERIE</h3>
+					<p>valeriefelder@thecloseknitfamily.com</p>
+					<p>979.324.1865</p>
+				</section>
+			</section>
+			
+			<section id="useful_links">
+				<h3>USEFUL LINKS</h3>
+				
+				<p><a class="useful_links" href="../html/index.html">Home</a></p>
+				<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
+				<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
+				<p><a class="useful_links" href="">Core Values</a></p>
+				<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
+				<p><a class="useful_links" href="../html/about.html">About</a></p>
+				<p><a class="useful_links" href="">Photos</a></p>
+				
+			</section>
+			
+		</footer>
+	</div>
+
+
+</body>
+
+</html>
