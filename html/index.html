@@ -17,140 +17,107 @@
 	</style>
 	
 </head>
+
 <body class="body-container">
-    <header class="header-container" id="myHeader">
-        <!--	<div class="header"> -->
-        <!-- gatsby header stuff -->
-        <!-- <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-        </div>-->
+        <header id="header-section">
+            <nav id="header-nav">
+               <ul class="navbar">
+                   <li class="navbutton"><a href="../html/index.html" class="nav-link"><img src="img/logo.png" alt="logo" /></a></li>
 
-
-        <!-- Top Purple Stripe -->
-        <div class="top_stripe">
-            <text>979-324-1865 | valeriefelder@closeknitfamily.com</text>
-        </div>
-
-        <!-- Lower Header with Nav -->
-        <div class="bottom_header">
-
-            <!-- Logo -->
-            <a href="../html/index.html"><img class="logo" src="../img/FINAL LOGO ZEEbuiltdec2018 - Copy.png" /></a>
-
-            <!-- Navigation Bar -->
-            <nav>
-                <ul>
-                    <li><a class="header_links" href="CKF-Website-Main-Folder/html/index.html" id="you_are_here">HOME</a></li>
-                    <li><a class="header_links" href="../html/about.html">ABOUT</a></li>
-                    <li><a class="header_links" href="../html/contact.html">CONTACT</a></li>
-                    <li class="dropdown">
-                        <a class="header_links dropbtn">PROGRAMS & RESOURCES</a>
-                        <div class="dropdown-content">
-                            <a class="header_links" href="../html/programs.html">PROGRAMS</a>
-                            <a class="header_links" href="../html/programs.html/#core-values">CORE VALUES</a>
-                            <a class="header_links" href="#">MEDIA RESOURCES</a>
-                        </div>
-                    </li>
-                    <li><a class="header_links" href="../html/blog.html">BLOG</a></li>
-                    <li><a class="header_links" href="../html/products.html">PRODUCTS</a></li>
-                </ul>
+                   <li class="navbutton"><a href="../html/index.html" class="nav-link-active">Home</a></li>
+                   <li class="navbutton"><a href="../html/about.html" class="nav-link">About</a></li>
+                   <li class="navbutton">
+					   <a href="#services" class="nav-link">Programs & Resources</a>
+					   <!--<div class="dropdown-content">
+						<a class="header_links" href="../html/programs.html">PROGRAMS</a>
+						<a class="header_links" href="../html/programs.html/#core-values">CORE VALUES</a>
+						<a class="header_links" href="../html/programs.html/#media">MEDIA RESOURCES</a>
+					</div> -->
+					</li>
+				   <li class="navbutton"><a href="../html/contact.html" class="nav-link">Contact</a></li>
+				   <li class="navbutton"><a href="../html/products.html" class="nav-link">Products</a></li>
+				   <li class="navbutton"><a href="" class="nav-link">Blog</a></li>
+               </ul> 
             </nav>
-        </div>
-        <!-- </div> blah -->
-    </header>
+        </header>
 
-	<div class="main">
-
-		<section class="photo">
-			<img class="hun" src="../img/WHITE JACKET VALERIE cropped 4.png" />
+	
+	
+	<!----------------HOME---------------->
+	<section id="home" >
+		<section class="headshot-box">
+			<img class="headshot" src="../img/WHITE JACKET VALERIE cropped 4.png" />
 		</section>
 
-
-		<section class="boxes column1">
-			<h3>THE</h3>
-			<h2>CORE VALUES</h2>
-			<div class="integrity">
+		<section id="intro-boxes">
+			<div class="the-core-values">
+				<h2>The Core Values</h2>
+				<div class="integrity">
 				
-				<div>Integrity</div>
-			</div>
-			<div class="accountability">
-				
-				<div>Accountability</div>
-			</div>
-			<div class="respect">
-				
-				<div>Respect</div>
-			</div>
-			<div class="responsiveness">
-				
-				<div>Responsiveness</div>
-			</div>
-			<div class="love">
-				
-				<div>Love</div>
-			</div>
-			<div><form action="../html/programs.html"><button id="core_values_button">LEARN MORE</button></form></div>
-		</section>
-		<section class="boxes column2">
-			<h3>THE</h3>
-			<h2>INSIGHT</h2>
-			<div class="sturdy_stiches">
-				<img class="hun" src="../img/smartmockups_jtem0znt.png"/>
-			</div>
-			<div class="table_talk">
-				<img class="hun" src="../img/smartmockups_jtem4m78.png" />
-			</div>
-			<section><form action="../html/products.html"><button id="insight_button">SHOP</button></form></section>
-		</section>
-		<section class="boxes column3">
-			<h3>THE</h3>
-			<h2>PROGRAMS</h2>
-			<div class="tuff_mamma">
-				
-				<div>
-					Tuff Mamma
+					<div>Integrity</div>
 				</div>
-			</div>
-			<div class="back_to_basics">
-				
-				<div>
-					Back To Basics
+				<div class="accountability">
+					
+					<div>Accountability</div>
 				</div>
-			</div>
-			<div class="buff_the_body">
-				
-				<div>
-					Buff The Body
+				<div class="respect">
+					
+					<div>Respect</div>
 				</div>
+				<div class="responsiveness">
+					
+					<div>Responsiveness</div>
+				</div>
+				<div class="love">
+					
+					<div>Love</div>
+				</div>
+				<div class="button-div"><a href="#" class="button">Contact</a></div>
+
 			</div>
-			<section><form action="../html/programs.html"><button id="programs_button">LEARN MORE</button></form></section>
+
+			<div class="the-insight">
+				<h2>The Insight</h2>
+				<div class="mockup-box">
+					<div class="sturdy_stiches">
+						
+						<img class="home-mockup" src="../img/smartmockups_jtem0znt.png"/>
+					</div>
+					<div class="table_talk">
+						
+						<img class="home-mockup" src="../img/smartmockups_jtem4m78.png" />
+					</div>	
+				</div>
+				<div class="button-div"><a href="#" class="button">Contact</a></div>
+					
+			</div>
+
+			<div class="the-programs">
+				<h2>The Programs</h2>
+				<div class="tuff-mamma">
+					<p>Tuff Mamma</p>
+				</div>
+				<div class="team-building">			
+					<p>Team Building</p>
+				</div>
+				<div class="resilience-training">
+					<p>Resilience Training</p>
+				</div>
+				<div class="button-div"><a href="#" class="button">Contact</a></div>
+				
+			</div>
 		</section>
+	</section>
 
 		
-		<section id="second-tag">
+	<!--	<section id="second-tag">
 			<div class="container">
 				<div class="box">
 					<h4>Equipping parents to raise children using CRITICAL CORE family values (the same I used to raise my own 9 children) </h4>
 					<h2>Tuff Mamas, Tender Dads, Teachable Kids</h2>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 
 		<!-- Clients Scroll Section -->
@@ -259,35 +226,38 @@
 		
 
 		<!-- Book Valerie, subscribe to newsletter, and subscribe to blog section -->
-		<section class="boxes column4">
-			<h4>Book Valerie Section</h4>
-			<p id="book_valerie_text">Are you a corporation focused on employee work-life balance? Are you a family-based
-			 organization? Are you putting together a women's ministry or retreat? Do you like what you
-			 see and want to learn more? Invite Valerie to speak at your next event!</p>
-			<form action="../html/contact.html"><button id="subscribe_button_1">Book Valerie</button></form>
-		</section>
-		<section class="boxes column5">
-			<section class="boxes top">
-				<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="subscribe_form_1">
-					<p>Subscribe to Valerie's Newsletter</p>
-					<p class="hidden">
-						<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
-					</p>
-					<input id="subscribe_window_2" type="email" name="email" placeholder="example@email.com" required />
-					<input id="subscribe_button_2" type="submit" name="subscribe" value="Subscribe" />
-				</form>
+		<section id="home-promo">
+			<section class="book-valerie">
+				<h4>Book Valerie Section</h4>
+				<p id="book_valerie_text">Are you a corporation focused on employee work-life balance? Are you a family-based
+				 organization? Are you putting together a women's ministry or retreat? Do you like what you
+				 see and want to learn more? Invite Valerie to speak at your next event!</p>
+				<form action="../html/contact.html"><button id="subscribe_button_1">Book Valerie</button></form>
 			</section>
-			<section class="boxes bottom">
-				<form name="contact" method="POST" netlify-honeypot="bot-field" data-detlify="true" id="subscribe_form_1">
-					<p>Subscribe to Valerie's Blog</p>
-					<p class="hidden">
-						<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
-					</p>
-					<input id="subscribe_window_3" type="email" name="email" placeholder="example@email.com" required />
-					<input id="subscribe_button_3" type="submit" name="subscribe" value="Subscribe" />
-				</form>
+			<section id="tester">
+				<section class="contact-valerie">
+					<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="subscribe_form_1">
+						<p>Subscribe to Valerie's Newsletter</p>
+						<p class="hidden">
+							<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
+						</p>
+						<input id="subscribe_window_2" type="email" name="email" placeholder="example@email.com" required />
+						<input id="subscribe_button_2" type="submit" name="subscribe" value="Subscribe" />
+					</form>
+				</section>
+				<section class="subscribe-valerie">
+					<form name="contact" method="POST" netlify-honeypot="bot-field" data-detlify="true" id="subscribe_form_1">
+						<p>Subscribe to Valerie's Blog</p>
+						<p class="hidden">
+							<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
+						</p>
+						<input id="subscribe_window_3" type="email" name="email" placeholder="example@email.com" required />
+						<input id="subscribe_button_3" type="submit" name="subscribe" value="Subscribe" />
+					</form>
+				</section>
 			</section>
 		</section>
+		
 
 		<!-- Testimonial #1 section -->
 		<section class="testimonial">
@@ -295,10 +265,10 @@
 			with her personal stories of rearing their nine children."</strong></p>
 			<p id="credit">- Jana House, <em>Adult Group Life Director, CUMC</em></p>
 		</section>
-	</div>
+	
 
-	<div class="footer">
-		<footer>
+	
+	<footer>
 			<section id="subscribe_2_outside">
 				<section id="subscribe_2">
 					<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
@@ -340,8 +310,8 @@
 				
 			</section>
 			
-		</footer>
-	</div>
+	</footer>
+	
 	
 
 
