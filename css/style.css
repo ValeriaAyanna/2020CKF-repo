@@ -118,30 +118,7 @@ ul.navbar li > a:visited {
     color: var(--light-tan);
 }
 
-.button {
-    background-color: var(--whiteish);
-	color: var(--bronze-gold);
-	border: 2px solid var(--bronze-gold);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-decoration: none;
-    text-transform: uppercase;
-    
-}
 
-.button:hover {
-    background-color: var(--camel);
-    color: var(--whiteish);
-    border: 2px solid var(--bronze-gold);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-decoration: none;
-    text-transform: uppercase;
-}
 
 
 #landing-page{
@@ -185,59 +162,108 @@ h3.landingText {
     grid-auto-rows: minmax(100%, auto);
     background-color: var(--deep-brown);
     
-    width: 80%;
+    width: 75%; /*orig 80%*/
     height: 25rem;
-	margin-right: 9em;
-	margin-left: 9em;
+	margin-right: 9em; /*orig 9em*/
+	margin-left: 11em; /*orig 9em*/
 	margin-top: -5%;
 	z-index: 3;
-	
+	justify-content: center;
 }
 
 
 
 .the-core-values {
 	background-color: var(--whiteish);
-	margin-left: 6em;
+	margin-left: 3em; /*orig 6em*/
 	margin-top: 3em;
 	margin-bottom: 3em;
 	text-align: center;
 	box-shadow: inset -23px 23px 34px #ccc2ab, 
 			inset 23px -23px 34px #ffffff;
+	
+	position: relative; /*necessary to keep button div at bottom of this*/
+
 }
 
 .the-insight {
 	background-color: var(--whiteish);
-	margin-left: 3em;
-	margin-right: 3em;
+	margin-left: 2em; /*orig 3em*/
+	margin-right: 2em; /*orig 3em*/
 	margin-top: 3em;
 	margin-bottom: 3em;
 	text-align: center;
 	box-shadow: inset -23px 23px 34px #ccc2ab, 
 			inset 23px -23px 34px #ffffff;
+	
+	position: relative; /*necessary to keep button div at bottom of this*/
 }
 
 .the-programs {
 	background-color: var(--whiteish);
-	margin-right: 6em;
+	margin-right: 3em; /*orig 6em*/
 	margin-top: 3em;
 	margin-bottom: 3em;
 	text-align: center;
 	box-shadow: inset -23px 23px 34px #ccc2ab, 
 			inset 23px -23px 34px #ffffff;
+	
+	position: relative; /*necessary to keep button div at bottom of this*/
 
 }
 
+.button-div {
+	background-color: red;
+	position: absolute;
+	bottom: 0; /* attaches the element to the bottom */
+    left: 0; /* attaches the element to the left-side */
+	right: 0; /* attaches the element to the right-side */
+	
+
+	
+}
+
+.button {
+	display: block;
+    background-color: var(--blackish);
+	color: var(--whiteish);
+	border: 2px solid var(--bronze-gold);
+	height: 2em;
+    padding-top: 1em;
+    /*padding-bottom: 1em;
+    padding-left: 10%;
+    padding-right: 10%;*/
+    text-decoration: none;
+	text-transform: uppercase;
+	bottom: 0; /* attaches the element to the bottom */
+    left: 0; /* attaches the element to the left-side */
+	right: 0; /* attaches the element to the right-side */
+	
+    
+}
+
+.button:hover {
+    display: block;
+    background-color: var(--whiteish);
+	color: var(--bronze-gold);
+	border: 2px solid var(--bronze-gold);
+	height: 2em;
+    padding-top: 1em;
+    /*padding-bottom: 1em;
+    padding-left: 10%;
+    padding-right: 10%;*/
+    text-decoration: none;
+	text-transform: uppercase;
+	bottom: 0; /* attaches the element to the bottom */
+    left: 0; /* attaches the element to the left-side */
+	right: 0; /* attaches the element to the right-side */
+}
+
 .mockup-box {
-	/*display: grid;
-	grid-column: 1/2;
-	grid-row: 1/3;
-    grid-template-columns: subgrid;
-	grid-template-rows: subgrid;*/
 	display: inline-grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100%, auto);
-	
+	margin-bottom: 3em;
 	
 }
 
@@ -246,8 +272,12 @@ h3.landingText {
 	
 }
 
+.programs-box {
+	margin-bottom: 1.8em;
+}
+
 .tuff-mamma {
-	background-color: red;
+	background: linear-gradient(45deg, var(--bronze-gold), var(--camel));
 	margin: auto;
 	margin-left: 2em;
 	margin-right: 2em;
@@ -258,7 +288,7 @@ h3.landingText {
 }
 
 .team-building {
-	background-image: linear-gradient(90deg, var(--bronze-gold, var(--camel), var(--bronze-gold)));
+	background: linear-gradient(45deg, var(--bronze-gold), var(--camel));
 	margin: auto;
 	margin-left: 2em;
 	margin-right: 2em;
@@ -268,13 +298,58 @@ h3.landingText {
 }
 
 .resilience-training {
-	background-color: red;
+	background: linear-gradient(45deg, var(--bronze-gold), var(--camel));
 	margin: auto;
 	margin-left: 2em;
 	margin-right: 2em;
 	height: 2.5em;
 	margin-bottom: 1em;
 	padding-top: 0.15em;
+}
+/*------------CORE VALUES--------------*/
+.love {
+	background-color: var(--whiteish);
+	border: 2px solid var(--bronze-gold);
+	margin-bottom: 1em;
+	font-size: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.accountability {
+	background-color: var(--whiteish);
+	border: 2px solid var(--bronze-gold);
+	margin-bottom: 1em;
+	font-size: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.integrity {
+	background-color: var(--whiteish);
+	border: 2px solid var(--bronze-gold);
+	margin-bottom: 1em;
+	font-size: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.respect {
+	background-color: var(--whiteish);
+	border: 2px solid var(--bronze-gold);
+	margin-bottom: 1em;
+	font-size: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.responsiveness {
+	background-color: var(--whiteish);
+	border: 2px solid var(--bronze-gold);
+	margin-bottom: 1em;
+	font-size: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 #clients {
