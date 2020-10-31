@@ -13,70 +13,64 @@
 	
 </head>
 <body class="body-container">
-	<header class="header-container" id="myHeader">
-	<!--	<div class="header"> -->
+	<header id="header-section">
+		<nav id="header-nav">
+		   <ul class="navbar">
+			   <li class="navbutton"><a href="../html/index.html" class="nav-link"><img src="img/logo.png" alt="logo" /></a></li>
 
-			<!-- Top Purple Stripe -->
-			<div class="top_stripe">
-				<text>979-324-1865 | valeriefelder@closeknitfamily.com</text>
-			</div>
-
-			<!-- Lower Header with Nav -->
-			<div class="bottom_header">
-			
-				<!-- Logo -->
-				<a href="../html/index.html" ><img class="logo" src="../img/FINAL LOGO ZEEbuiltdec2018 - Copy.png" width=14% /></a>
-			
-				<!-- Navigation Bar -->
-				<nav>
-					<ul>
-						<li><a class="header_links" href="../html/index.html">HOME</a></li>
-						<li><a class="header_links" href="../html/about.html" id="you_are_here">ABOUT</a></li>
-						<li><a class="header_links" href="../html/contact.html">CONTACT</a></li>
-						<li class="dropdown"><a class="header_links" class="dropbtn">PROGRAMS & RESOURCES</a>
-							<div class="dropdown-content">
-								<a class="header_links" href="../html/programs.html">PROGRAMS</a>
-								<a class="header_links" href="#">CORE VALUES</a>
-								<a class="header_links" href="#">MEDIA RESOURCES</a>
-							</div>
-						</li>
-						<li><a class="header_links" href="../html/blog.html">BLOG</a></li>
-						<li><a class="header_links" href="../html/products.html">PRODUCTS</a></li>
-					</ul>
-				</nav>
-			</div>
-		<!-- </div> -->
+			   <li class="navbutton"><a href="../html/index.html" class="nav-link-active">Home</a></li>
+			   <li class="navbutton"><a href="../html/about.html" class="nav-link">About</a></li>
+			   <li class="navbutton">
+				   <a href="#services" class="nav-link">Programs & Resources</a>
+				   <!--<div class="dropdown-content">
+					<a class="header_links" href="../html/programs.html">PROGRAMS</a>
+					<a class="header_links" href="../html/programs.html/#core-values">CORE VALUES</a>
+					<a class="header_links" href="../html/programs.html/#media">MEDIA RESOURCES</a>
+				</div> -->
+				</li>
+			   <li class="navbutton"><a href="../html/contact.html" class="nav-link">Contact</a></li>
+			   <li class="navbutton"><a href="../html/products.html" class="nav-link">Products</a></li>
+			   <li class="navbutton"><a href="" class="nav-link">Blog</a></li>
+		   </ul> 
+		</nav>
 	</header>
 
 	<div class="main">
-		<section class="sizzle_reel">
-			<img src="../img/WHITE JACKET VALERIE cropped 4.png" width=100%/>
+		<section class="headshot-box">
+			<img class="headshot" src="../img/WHITE JACKET VALERIE cropped 4.png" />
 		</section>
 
 		<!-- About Valerie, book Valerie, and purchase books -->
-		<section class="boxes column6">
-			<h4>About Valerie </h4>
-			<p id="about_valerie_text">Hi, I'm Valerie Felder. Mother of nine and professional public speaker. But how did
-			a little girl growing up in Michigan make it all the way to the person I am today? Let me introduce you to my
-			beginnings, and thus provide a deeper understanding of who I am. blah as;ldfh;uaue jhla adfhdauih adlskjhljadf ljh
-			as;jhluha iulhsd ip wouioh f hldf purt io;a kjlkkjgf upi; a uhpt</p>
+		<section class="about-box">
+			<section class="about-text">
+				<h2>About Valerie </h2>
+				<p id="about_valerie_text">Hi, I'm Valerie Felder. Mother of nine and professional public speaker. But how did
+				a little girl growing up in Michigan make it all the way to the person I am today? Let me introduce you to my
+				beginnings, and thus provide a deeper understanding of who I am. blah as;ldfh;uaue jhla adfhdauih adlskjhljadf ljh
+				as;jhluha iulhsd ip wouioh f hldf purt io;a kjlkkjgf upi; a uhpt</p>
+			</section>
+			<section class="about-sidebar">
+				
+					<section class="contact-preview">
+						<h4>Book Valerie to Learn More!</h4>
+						<div class="about-button-div"><a href="../html/contact.html" class="about-button">Book Valerie</a></div>
+					</section>
+					<section class="products-preview">
+						<h4>Read More About Valerie</h4>
+						<div class="about-button-div"><a href="../html/contact.html" class="about-button">See Products</a></div>
+					</section>
+					<section class="blog-preview">
+						<h4>Visit Valerie's Blog:</h4>
+						<div class="about-button-div"><a href="../html/contact.html" class="blog-button">See Blog</a></div>
+
+					</section>
+				
+		
+			</section>
 		</section>
-		<section class="boxes column7">
-			<section class="boxes learn_more">
-				<h4>Book Valerie to Learn More!</h4>
-				<a href="../html/contact.html"><button id="about_page_button">Book Valerie</button></a>
-			</section>
-			<section class="boxes read_books">
-				<h4>Read More About Valerie</h4>
-				<a href="../html/products.html"><button id="about_page_button">View Books</button></a>
-			</section>
-			<section class="boxes extra_box">
-				<h4>Visit My Blog To Read More About:</h4>
-				<button id="about_page_button_2">Parenting</button>
-				<button id="about_page_button_2">Homeschooling</button>
-				<button id="about_page_button_2">Fitness & Health</button>
-				<button id="about_page_button_2">The Tuff Mamma Mindset</button>
-			</section>
+		
+		<section class="about-filler">
+
 		</section>
 
 		<!-- Testimonial #2 section -->
@@ -90,51 +84,46 @@
 
 	</div>
 
-	<div class="footer">
-		<footer>
-			<section id="subscribe_2_outside">
-				<section id="subscribe_2">
-					<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
-						<h3>SUBSCRIBE TO THE NEWSLETTER</h3>
-						<p class="hidden">
-							<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
-						</p>
-						<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
-						<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
-					</form>
-				</section>
-				<section id="copyright_credit">
-					<p>&copy 2019 by Valerie Felder</p>
-					<p>Web Development by Valeria Felder</p>
-				</section>
+	<footer>
+		<section class="footer-box">
+			<section class="small-footer-box">
+				<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
+					<h3>VISIT VALERIE'S BLOG</h3>
+					<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
+					<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
+				</form>
 			</section>
+			<section class="small-footer-box">
+				<p>&copy 2019 by Valerie Felder</p>
+				<p>Web Development by Valeria Felder</p>
+			</section>
+		</section>
 
-			<section id="stay_connected_outside">
-				<section id="stay_connected">
-					<h3>STAY CONNECTED</h3>
-				</section>
-				<section id="contact_2">
-					<h3>CONTACT VALERIE</h3>
-					<p>valeriefelder@thecloseknitfamily.com</p>
-					<p>979.324.1865</p>
-				</section>
+		<section class="footer-box">
+			<section class="small-footer-box">
+				<h3>STAY CONNECTED</h3>
 			</section>
-			
-			<section id="useful_links">
-				<h3>USEFUL LINKS</h3>
-				
-				<p><a class="useful_links" href="../html/index.html">Home</a></p>
-				<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
-				<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
-				<p><a class="useful_links" href="">Core Values</a></p>
-				<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
-				<p><a class="useful_links" href="../html/about.html">About</a></p>
-				<p><a class="useful_links" href="">Photos</a></p>
-				
+			<section class="small-footer-box">
+				<h3>CONTACT VALERIE</h3>
+				<p>valeriefelder@thecloseknitfamily.com</p>
+				<p>979.324.1865</p>
 			</section>
+		</section>
+		
+		<section class="links-footer-box">
+			<h3>USEFUL LINKS</h3>
 			
-		</footer>
-	</div>
+			<p><a class="useful_links" href="../html/index.html">Home</a></p>
+			<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
+			<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
+			<p><a class="useful_links" href="../html/programs.html/#core-values">Core Values</a></p>
+			<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
+			<p><a class="useful_links" href="../html/about.html">About</a></p>
+			<p><a class="useful_links" href="../html/programs.html/#media-resources">Photos</a></p>
+			
+		</section>
+		
+</footer>
 
 
 </body>

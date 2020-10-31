@@ -367,39 +367,100 @@ h3.landingText {
 	display: grid;
     grid-template-columns: 3fr 2fr;
 	grid-auto-rows: minmax(100%, auto);	
-	background-color: yellow;
 	margin-right: 5em;
 	margin-left: 5em;
 	margin-top: 5em;
+	height: 18em;
 }
 
 .book-valerie {
-	text-align: center;
-	
+	background-color: var(--bronze-gold);
+	text-align: center;	
 	padding-left: 2em;
 	padding-right: 2em;
 	padding-top: 2em;
-	background-color: red;
+	border: 2px solid var(--whiteish);
+	height: 18em;
+}
+
+.book-button-div {
+	margin-top: 4em;
+}
+
+.other-button-div {
+	margin-top: 5em;
+}
+
+.book-button {
+	background-color: var(--bronze-gold);
+	text-decoration: none;
+	color: var(--whiteish);
+	border: 2px solid var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+	
+}
+
+.book-button:hover {
+	background-color: var(--whiteish);
+	text-decoration: none;
+	color: var(--bronze-gold);
+	border: 2px solid var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+	
+}
+
+.other-button {
+	background-color: var(--deep-brown);
+	text-decoration: none;
+	color: var(--whiteish);
+	border: 2px solid var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+	
+}
+
+.other-button:hover {
+	background-color: var(--whiteish);
+	text-decoration: none;
+	color: var(--deep-brown);
+	border: 2px solid var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+	
 }
 
 .contact-valerie {
-	background-color: purple;
 	
+	border: 2px solid var(--whiteish);
+	background-color: var(--deep-brown);
+	text-align: center;
+	color: var(--whiteish);
+	height: 18em;
+	padding-top: 2em;
 }
 
 .subscribe-valerie {
-	background-color: pink;
-	
-	
+	background-color: var(--camel);
+	text-align: center;
+	border: 2px solid var(--whiteish);
+	padding-bottom: 2em;
 }
 
 .hidden {
 	visibility: hidden;
 }
 
-#tester {
-	background-color: green;
-}
+
 
 .testimonial {
 	margin-top: 3em;
@@ -418,4 +479,180 @@ footer {
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 	grid-auto-rows: minmax(100%, auto);	
+	color: var(--blackish);
 }
+
+.footer-box {
+	
+}
+
+.small-footer-box {
+	
+	padding-top: 2em;
+	height: 10em;
+	text-align: center;
+}
+
+.links-footer-box {
+	
+	padding-top: 2em;
+	padding-left: 1em;
+	
+}
+
+.useful_links {
+	text-decoration: none;
+	color: var(--blackish);
+}
+
+/*----------------ABOUT-----------------*/
+.about-box {
+	display: grid;
+	position: absolute; /*pops this section above the headshot*/
+    grid-template-columns: 3fr 1fr;
+	grid-auto-rows: minmax(100%, auto);	
+	background-color: var(--bronze-gold);
+	margin-left: 6em;
+	margin-right: 6em;
+	margin-top: -5%;
+	z-index: 3;
+	margin-bottom: 5em;
+	height: 22em;
+}
+
+.about-text {
+	background-color: var(--whiteish);
+	padding-left: 3em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-right: 1em;
+
+	border-bottom: 2px solid var(--deep-brown);
+	border-left: 2px solid var(--deep-brown);
+	border-top: 2px solid var(--deep-brown);
+}
+
+.about-sidebar {
+	background-color: var(--deep-brown);
+	color: var(--whiteish);
+	padding-right: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 1em;
+	text-align: center;
+}
+
+
+.about-button-div {
+	margin-top: 1em;
+	width: 10em;
+	margin-right: 4em;
+	margin-left: 4em;
+}
+
+.about-button {
+	background-color: var(--deep-brown);
+	text-decoration: none;
+	color: var(--whiteish);
+	border: 2px solid var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+	
+	
+}
+
+.about-button:hover {
+	background-color: var(--whiteish);
+	text-decoration: none;
+	color: var(--deep-brown);
+	border: 2px solid var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+	
+}
+
+.blog-button {
+	background-color: var(--deep-brown);
+	text-decoration: none;
+	color: var(--whiteish);
+	border: 2px solid var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 2.8em;
+	padding-left: 2.8em;
+	
+	
+}
+
+.blog-button:hover {
+	background-color: var(--whiteish);
+	text-decoration: none;
+	color: var(--deep-brown);
+	border: 2px solid var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 2.8em;
+	padding-left: 2.8em;
+	
+}
+
+.products-preview, .blog-preview {
+	margin-top: 2em;
+}
+
+.about-filler {
+	position: relative;
+	background-color: var(--whiteish);
+	height: 20em;
+	top: 0;
+}
+
+.social-media-icons {
+
+}
+
+.social_media_icon_box {
+
+}
+
+ul.social-media-icons {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 2%;
+}
+
+#social_media_icon_box {
+	margin-top: 3rem;
+	margin-right: 3rem;
+	margin-bottom: 3rem;
+	margin-left: 1rem;
+}
+
+ul.social-media-icons li {
+    display: inline;
+}
+
+/*-------------CONTACT SECTION------------*/
+.contact-section {
+	display: grid;
+    grid-template-columns: 2fr 4fr;
+	grid-auto-rows: minmax(100%, auto);	
+}
+
+.contact-image {
+	background: linear-gradient(90deg, var(--deep-brown), var(--whiteish));
+	border: 2px solid red;
+	color: var(--whiteish);
+	
+}
+
+.contact-form {
+	border: 2px solid blue;
+}
+
+
+
