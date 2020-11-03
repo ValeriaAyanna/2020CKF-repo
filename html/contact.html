@@ -47,29 +47,34 @@
 				<form name="contact" method="POST" data-netlify="true" id="contact_form">
 					<h2>Contact Form</h2>
 
-					<label id="contact_form_label">Name: </label>
-					<p>
-						<input id="contact_form_input_name_1" type="text" name="name1" placeholder="First" required/> <input id="contact_form_input_name" type="text" name="name2" placeholder="Last" />
-					</p>
-
-					<p>test</p>
-
-					<label id="contact_form_label"> Email: </label>
-					<p>
-						<input id="contact_form_input" type="email" name="email" placeholder="example@email.com" required/>
-					</p>
-
-					<label id="contact_form_label"> Message: </label>
-					<p>
-						<textarea id="contact_form_input" name="message" placeholder="Message..." required></textarea>
-					</p>
-
-					<label id="contact_form_label"> Verification: </label>
-					<div data-netlify-recaptcha="true"></div>
+					<div class="form-lines">
+						<label for="fname">Name:</label>
+						<div class="name-block">
+							<input type="text" id="fname-field" name="firstname" placeholder="First Name...">
+							<input type="text" id="lname-field" name="lastname" placeholder="Last Name...">
+						</div>
+					</div>
 					
-					<p>
-						<button type="submit" id="contact_page_button">Submit</button>
-					</p>
+					
+
+					<div class="form-lines">
+						<label for="email">Email:</label>
+						<input type="text" id="email field" name="email" placeholder="name@example.com">
+					</div>
+				   
+					<div class="form-lines"> 
+						<label for="message">Message:</label>
+						<textarea id="message field" name="message" placeholder="Your message..."></textarea>
+						
+					</div>
+					<div class="form-lines">
+						<label id="contact_form_label"> Verification: </label>
+						<div data-netlify-recaptcha="true"></div>
+					</div>
+					<div class="contact-page-button-div"><a href="#" class="contact-page-button">See Blog</a></div>
+
+					
+					
 				</form>
 			</section>
 		</section>
