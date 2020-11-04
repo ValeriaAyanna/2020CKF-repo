@@ -3,7 +3,9 @@
     --blackish: #2d2c2c;
     --whiteish: #fff3d6;
     --camel: #bb9457;
-    --bronze-gold: #d18a2c;
+	--bronze-gold: #d18a2c;
+	
+	--speed: 1000ms;
     
 }
 /* Bronze Gold shadow tones
@@ -658,7 +660,7 @@ ul.social-media-icons li {
 	margin-right: 15em;
 	padding-left: 2em;
 	padding-right: 2em;
-	padding-top: 2em;
+	padding-top: 1em;
 	padding-bottom: 2em;
 	margin-top: 1em;
 	margin-bottom: 5em;
@@ -674,20 +676,54 @@ ul.social-media-icons li {
 	margin-left: 0.5em;
 }
 
+.contact-text {
+	text-align: center;
+}
+
+.contact-page-button-div {
+	text-align: center;
+}
+
+.contact-page-button {
+	background: var(--deep-brown);
+	text-decoration: none;
+	color: var(--whiteish);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-transform: uppercase;
+}
+
+.contact-page-button:hover {
+	background: var(--whiteish);
+	text-decoration: none;
+	color: var(--deep-brown);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-transform: uppercase;
+}
+
+
 input {
 	background: var(--whiteish);
 	border: 1px solid var(--bronze-gold);
 	border-radius: 10px;
 	height: 3em;
+	padding-left: 0.5em;
 }
 
 textarea {
 	background: var(--whiteish);
 	border: 1px solid var(--bronze-gold);
 	border-radius: 10px;
-	height: 3em;
+	height: 4em;
 	resize: vertical;
-	max-height: 4em;
+	max-height: 6em;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
 }
 
 ::placeholder {
@@ -709,3 +745,80 @@ textarea {
 	grid-template-columns: 1fr 1fr;
 }
 
+
+/*----------------PRODUCTS-----------------*/
+.prod_img {
+	width: 100%;
+	background: var(--whiteish);
+}
+
+.products {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-auto-rows: minmax(100%, auto);	
+	margin-left: 8em;
+	margin-right: 8em;
+	border: 2px solid var(--bronze-gold);
+	background: var(--whiteish);
+	margin-bottom: 2em;
+}
+
+.products-div {
+	margin-top: 6em;
+	margin-bottom: 10em;
+}
+
+.prod_descrip {
+	background: var(--bronze-gold);
+	padding-left: 1em;
+	padding-right: 1em;
+	
+}
+
+.check_1, .check_2, .check_3 {
+
+}
+
+/*-----------------PROGRAMS-----------------*/
+.programs-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: minmax(100%, auto);
+	height: 75vh;
+	text-align: center;
+}
+
+.uno {
+	background-color: var(--camel);
+}
+
+.dos {
+	background-color: var(--deep-brown);
+}
+
+.tres {
+	background-color: var(--bronze-gold);
+}
+
+.hover-right:before {
+	transition: var(--speed) all ease-in-out;
+}
+
+.hover-right {
+	display: grid;
+	grid-template-columns: 1fr 1fr 5fr;
+	grid-auto-rows: minmax(100%, auto);
+	
+}
+
+.hover-mid {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-auto-rows: minmax(100%, auto);
+}
+
+.hover-left {
+	display: grid;
+	grid-template-columns: 5fr 1fr 1fr;
+	grid-auto-rows: minmax(100%, auto);
+}

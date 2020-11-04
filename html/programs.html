@@ -26,7 +26,7 @@
 			   <li class="navbutton"><a href="../html/index.html" class="nav-link-active">Home</a></li>
 			   <li class="navbutton"><a href="../html/about.html" class="nav-link">About</a></li>
 			   <li class="navbutton">
-				   <a href="#services" class="nav-link">Programs & Resources</a>
+				   <a href="../html/programs.html" class="nav-link">Programs & Resources</a>
 				   <!--<div class="dropdown-content">
 					<a class="header_links" href="../html/programs.html">PROGRAMS</a>
 					<a class="header_links" href="../html/programs.html/#core-values">CORE VALUES</a>
@@ -43,35 +43,37 @@
 
 	<div class="main">
 
-
-		<section class="boxes panel uno">
-			<h2>Team Building</h2>
-			
-			
+		<div class="programs-section">
+			<section class="program-boxes panel uno">
+				<h2>Team Building</h2>
+				
+				
+				
+					
+					
+				
+	
+				<div><form action=""><button id="pdf-button" type="submit" onclick="window.open('../docs/back-to-basics.pdf')"><strong>BACK TO BASICS PDF</strong></button></form></div>
+			</section>
+	
+			<section class="program-boxes panel dos">
+				<h2>Tuff Mama</h2>
+	
+				
+				
+				<div><form action=""><button id="pdf-button" type="submit" onclick="window.open('file.doc')"><strong>BUFF THE BODY PDF</strong></button></form></div>
+			</section>
+	
+			<section class="program-boxes panel tres">
+				<h2>Resilience Training</h2>
 			
 				
 				
-			
-
-			<div><form action=""><button id="pdf-button" type="submit" onclick="window.open('../docs/back-to-basics.pdf')"><strong>BACK TO BASICS PDF</strong></button></form></div>
-		</section>
-
-		<section class="boxes panel dos">
-			<h2>Tuff Mama</h2>
-
-			
-			
-			<div><form action=""><button id="pdf-button" type="submit" onclick="window.open('file.doc')"><strong>BUFF THE BODY PDF</strong></button></form></div>
-		</section>
-
-		<section class="boxes panel tres">
-			<h2>Resilience Training</h2>
+				
+				<div><form action=""><button id="pdf-button" type="submit" onclick="window.open('../docs/back-to-basics.pdf')"><strong>TUFF MAMA PDF</strong></button></form></div>
+			</section>
+		</div>
 		
-			
-			
-			
-			<div><form action=""><button id="pdf-button" type="submit" onclick="window.open('../docs/back-to-basics.pdf')"><strong>TUFF MAMA PDF</strong></button></form></div>
-		</section>
         
 		<script>
 
@@ -100,7 +102,7 @@
 			const uno = document.querySelector('.uno');
 			const dos = document.querySelector('.dos');
 			const tres = document.querySelector('.tres');
-			const main = document.querySelector('.main');
+			const main = document.querySelector('.programs-section');
 
 			uno.addEventListener('mouseenter', () => {
 				main.classList.add('hover-left');
@@ -177,7 +179,7 @@
 
 		</div>
 
-        
+        <!--Tabbed panel JS-->
 		<script>
 			document.getElementById("defaultOpen").click();
 
