@@ -1,10 +1,14 @@
-﻿<!DOCTYPE html>
+﻿
+
+
+
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script src="..js/sticky.js"></script>
-	<title>The Close-Knit Family | About</title>
+	<title>The Close-Knit Family | Contact</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="Affordable and professional web design">
@@ -28,60 +32,63 @@
 					<a class="header_links" href="../html/programs.html/#media">MEDIA RESOURCES</a>
 				</div> -->
 				</li>
-			   <li class="navbutton"><a href="../html/contact.php" class="nav-link">Contact</a></li>
+			   <li class="navbutton"><a href="../html/contact.html" class="nav-link">Contact</a></li>
 			   <li class="navbutton"><a href="../html/products.html" class="nav-link">Products</a></li>
 			   <li class="navbutton"><a href="../html/blog.html" class="nav-link">Blog</a></li>
 		   </ul> 
 		</nav>
 	</header>
 
+	<!--PHP thank you 
+	<?=$thankYou ?>-->
+
 	<div class="main">
-		<section class="headshot-box">
-			<img class="headshot" src="../img/WHITE JACKET VALERIE cropped 4.png" />
-		</section>
-
-		<!-- About Valerie, book Valerie, and purchase books -->
-		<section class="about-box">
-			<section class="about-text">
-				<h2>About Valerie </h2>
-				<p id="about_valerie_text">Hi, I'm Valerie Felder. Mother of nine and professional public speaker. But how did
-				a little girl growing up in Michigan make it all the way to the person I am today? Let me introduce you to my
-				beginnings, and thus provide a deeper understanding of who I am. blah as;ldfh;uaue jhla adfhdauih adlskjhljadf ljh
-				as;jhluha iulhsd ip wouioh f hldf purt io;a kjlkkjgf upi; a uhpt</p>
+		<section class="contact-section">
+			<section class="contact-image">
+				<h2>Let's work together</h2>
 			</section>
-			<section class="about-sidebar">
-				
-					<section class="contact-preview">
-						<h4>Book Valerie to Learn More!</h4>
-						<div class="about-button-div"><a href="../html/contact.html" class="about-button">Book Valerie</a></div>
-					</section>
-					<section class="products-preview">
-						<h4>Read More About Valerie</h4>
-						<div class="about-button-div"><a href="../html/contact.html" class="about-button">See Products</a></div>
-					</section>
-					<section class="blog-preview">
-						<h4>Visit Valerie's Blog:</h4>
-						<div class="about-button-div"><a href="../html/contact.html" class="blog-button">See Blog</a></div>
 
-					</section>
-				
-		
+			<!-- Contact Form using Netlify -->
+			<section class="contact-form">
+				<form name="contact" method="POST" action="contact.php" data-netlify="true" id="contact_form">
+					<h2 class="contact-text">Contact Form</h2>
+
+					<div class="form-lines">
+						<label for="fname">Name:</label>
+						<div class="name-block">
+							<input type="text" id="fname-field" name="firstname" placeholder="First Name...">
+							<input type="text" id="lname-field" name="lastname" placeholder="Last Name...">
+						</div>
+					</div>
+					
+					
+
+					<div class="form-lines">
+						<label for="email">Email:</label>
+						<input type="text" id="email field" name="senderEmail" placeholder="name@example.com">
+					</div>
+				   
+					<div class="form-lines"> 
+						<label for="message">Message:</label>
+						<textarea id="message field" name="contactMessage" placeholder="Your message..."></textarea>
+						
+					</div>
+					<div class="form-lines">
+						<label id="contact_form_label"> Verification: </label>
+						<div data-netlify-recaptcha="true"></div>
+					</div>
+
+					<input type="submit" name="submit" class="contact-page-button">
+					<!--<div class="contact-page-button-div"><a href="#" class="contact-page-button">Submit</a></div>
+-->
+					
+					
+				</form>
 			</section>
 		</section>
+
 		
-		<section class="about-filler">
-
-		</section>
-
-		<!-- Testimonial #2 section -->
-		<section class="testimonial">
-			<p id="testimonial_text"><strong>"Valerie speaks profound and deep truths into the hearts of her 
-			audience. She connects with a compassionate, caring heart to build others. I love sitting at her 
-			feet to learn"</strong></p>
-			<p id="credit">- Roxanne Parks, <em>President & Founder of Winter Summit Ministries</em></p>
-		</section>
 		
-
 	</div>
 
 	<footer>
@@ -102,6 +109,29 @@
 		<section class="footer-box">
 			<section class="small-footer-box">
 				<h3>STAY CONNECTED</h3>
+				<ul class="social-media-icons">
+					<li id="social_media_icon_box">
+						<img src="../img/flogo_RGB_HEX-72.png" width="29" />
+					</li>
+					
+					<li id="social_media_icon_box">
+						<img src="../img/glyph-logo_May2016.png" width="29" />
+					</li>
+
+					<li id="social_media_icon_box">
+						<img src="../img/badgeRGB-white.png" width="29" />
+					</li>
+
+					<li id="social_media_icon_box">
+						<img src="../img/badgeRGB-white.png" width="29" />
+					</li>
+
+					<li id="social_media_icon_box">
+						<img src="../img/badgeRGB-white.png" width="29" />
+					</li>
+
+				</ul>
+
 			</section>
 			<section class="small-footer-box">
 				<h3>CONTACT VALERIE</h3>
@@ -129,3 +159,8 @@
 </body>
 
 </html>
+
+<!--
+
+	
+-->
