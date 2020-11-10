@@ -1,4 +1,31 @@
-﻿<!DOCTYPE html>
+﻿
+
+<?php
+
+	if($_POST["submit"]) {
+		$recipient="valeria_felder@outlook.com";
+		$subject="Website Contact Form Submission";
+		$firstname=$_POST["firstname"];
+		$lastname=$_POST["lastname"];
+
+		$senderEmail=$_POST["senderEmail"];
+
+		$message=$_POST["contactMessage"];
+
+			$mailBody="Name:
+			$sender\nEmail:
+			$senderEmail\n\n$contactMessage";
+
+			mail($recipient,$subject, $mailBody, "From: $firstname " " $lastname <$senderEmail>");
+
+			$thankYou="<p>Thank you! Your message has been sent. </p>";
+	}
+
+?>
+
+
+
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -35,6 +62,8 @@
 		</nav>
 	</header>
 
+	<!--PHP thank you -->
+	<?=$thankYou ?>
 
 	<div class="main">
 		<section class="contact-section">
@@ -44,7 +73,7 @@
 
 			<!-- Contact Form using Netlify -->
 			<section class="contact-form">
-				<form name="contact" method="POST" data-netlify="true" id="contact_form">
+				<form name="contact" method="POST" action="contact.php" data-netlify="true" id="contact_form">
 					<h2 class="contact-text">Contact Form</h2>
 
 					<div class="form-lines">
@@ -59,20 +88,22 @@
 
 					<div class="form-lines">
 						<label for="email">Email:</label>
-						<input type="text" id="email field" name="email" placeholder="name@example.com">
+						<input type="text" id="email field" name="senderEmail" placeholder="name@example.com">
 					</div>
 				   
 					<div class="form-lines"> 
 						<label for="message">Message:</label>
-						<textarea id="message field" name="message" placeholder="Your message..."></textarea>
+						<textarea id="message field" name="contactMessage" placeholder="Your message..."></textarea>
 						
 					</div>
 					<div class="form-lines">
 						<label id="contact_form_label"> Verification: </label>
 						<div data-netlify-recaptcha="true"></div>
 					</div>
-					<div class="contact-page-button-div"><a href="#" class="contact-page-button">Submit</a></div>
 
+					<input type="submit" name="submit" class="contact-page-button">
+					<!--<div class="contact-page-button-div"><a href="#" class="contact-page-button">Submit</a></div>
+-->
 					
 					
 				</form>
