@@ -35,7 +35,7 @@
 				</li>
 			   <li class="navbutton"><a href="../html/contact.html" class="nav-link">Contact</a></li>
 			   <li class="navbutton"><a href="../html/products.html" class="nav-link">Products</a></li>
-			   <li class="navbutton"><a href="" class="nav-link">Blog</a></li>
+			   <li class="navbutton"><a href="../html/blog.html" class="nav-link">Blog</a></li>
 		   </ul> 
 		</nav>
 	</header>
@@ -129,101 +129,103 @@
 		<!-- Do Not Remove Div Or Everything Will Look Shitty -->
 		<div class="container"></div>
 	
-		<a id="core-values"></a>
+		<div class="core-values-line">Core Values</div>
 		<!-- Core Values Section Bar -->
-		<section id="divider">
-			<div class="divider">
-				Core Value Section
+		<div class="core-values-wrapper">
+			<div class="core-values-blocks">
+
+				<div class="block core-values-text">
+					<p>
+						The following values are integral to my
+						Tuff Mamma approach and my personal philosophy.
+						My hope is to pass these vital focus points on 
+						to enrich your life, family, and career.
+					</p>
+				</div>
+				<div class="block indiv-value">
+					<h3>Integrity</h3>
+				</div>
+				<div class="block indiv-value">
+					<h3>Accountability</h3>
+				</div>
+				<div class="block indiv-value">
+					<h3>Respect</h3>
+				</div>
+				<div class="block indiv-value">
+					<h3>Responsiveness</h3>
+				</div>
+				<div class="block indiv-value">
+					<h3>Love</h3>
+				</div>
+	
 			</div>
-		</section>
+		</div>
 
 		
-		<!-- Tab links -->
-		<div class="tabbed-panel">
-		<div class="tab">
-		  <button class="tablinks" onclick="openCity(event, 'Integrity')" id="defaultOpen">Integrity</button>
-		  <button class="tablinks" onclick="openCity(event, 'Accountability')">Accountability</button>
-		  <button class="tablinks" onclick="openCity(event, 'Respect')">Respect</button>
-		  <button class="tablinks" onclick="openCity(event, 'Responsiveness')">Responsiveness</button>
-		  <button class="tablinks" onclick="openCity(event, 'Love')">Love</button>
-		</div>
 
-		<!-- Tab content -->
-		<div id="Integrity" class="tabcontent">
-		  <h3><strong>Integrity</strong></h3>
-		  <p>London is the capital city of England. ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England.
-		  ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England.
-		   ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England.
-		    ondon is the capital city of England. ondon is the capital city of England. ondon is the capital city of England.</p>
-		</div>
-
-		<div id="Accountability" class="tabcontent">
-		  <h3><strong>Accountability</strong></h3>
-		  <p>Paris is the capital of France.</p> 
-		</div>
-
-		<div id="Respect" class="tabcontent">
-		  <h3><strong>Respect</strong></h3>
-		  <p>Tokyo is the capital of Japan.</p>
-		</div>
-
-		<div id="Responsiveness" class="tabcontent">
-		  <h3><strong>Responsiveness</strong></h3>
-		  <p>Responsive websites are the future.</p>
-		</div>
-
-		<div id="Love" class="tabcontent">
-		  <h3><strong>Love</strong></h3>
-		  <p>One love.</p>
-		</div>
-
-		</div>
-
-        <!--Tabbed panel JS-->
-		<script>
-			document.getElementById("defaultOpen").click();
-
-			function openCity(evt, cityName) {
-			  // Declare all variables
-			  var i, tabcontent, tablinks;
-
-			  // Get all elements with class="tabcontent" and hide them
-			  tabcontent = document.getElementsByClassName("tabcontent");
-			  for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			  }
-
-			  // Get all elements with class="tablinks" and remove the class "active"
-			  tablinks = document.getElementsByClassName("tablinks");
-			  for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" bactive", "");
-			  }
-
-			  // Show the current tab, and add an "active" class to the button that opened the tab
-			  document.getElementById(cityName).style.display = "block";
-			  evt.currentTarget.className += " bactive";
-			}
-			
-		</script> 
+		
+		
 
 
 		<!-- Media Resources Section Bar -->
-		<section id="divider">
-			<div class="divider">
-				Media Resources
-			</div>
-		</section>
+		<div class="core-values-line">Media Resources</div>
 
 		<!-- Media Resources Section -->
-		<section class="boxes download_docs">
-			<h2>Downloads</h2>
-			
-			<div><form action=""><button id="downloads-button"><strong>PRE-EVENT QUESTIONNAIRE</strong></button></form></div>
-			<div><form action=""><button id="downloads-button"><strong>SPEAKER BIOGRAPHY</strong></button></form></div>
-			<div><form action=""><button id="downloads-button"><strong>SPEAKER ONESHEET</strong></button></form></div>
-			<div><form action=""><button id="downloads-button"><strong>BUSINESS & LECTURE PROGRAMS</strong></button></form></div>
-		</section>
-		<section class="boxes photo_gallery">
+		<div class="media-resources-section">
+			<div class="downloads media-block">
+				<h2>Downloads</h2>
+				<ul class="downloads-list">
+					<li class="download-prev">
+						Pre-Even Questionnair
+					</li>
+					<li class="download-prev">
+						Speaker Biography
+					</li>
+					<li class="download-prev">
+						Speaker Onesheet
+					</li>
+					<li class="download-prev">
+						Business & Lecture Programs
+					</li>
+				</ul>				
+			</div>
+
+			<div class="photo-gallery media-block">
+				<h2>Photos</h2>
+				<ul class="gallery-grid">
+					<li class="pic-li">
+						<img src="" class="picture-prev">Img 1</img>
+					</li>
+					<li class="pic-li">
+						<img src="" class="picture-prev">Img 2</img>
+					</li>
+					<li clas="pic-li">
+						<img src="" class="picture-prev">Img 3</img>
+					</li>
+					
+					
+				</ul>
+			</div>
+			<div class="more-videos media-block">
+				<h2>Videos</h2>
+				<ul class="video-list">
+					<li class="video-link">
+						Video 1
+					</li>
+					<li class="video-link">
+						Video 2
+					</li>
+					<li class="video-link">
+						Video 3
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		
+		<!--<section class="boxes photo_gallery">
 			<h2>Images</h2>
 			
 			<div>
@@ -242,12 +244,12 @@
 		<section class="boxes more_videos">
 			<h2>More Videos</h2>
 			
-            <!-- Each originally had a button nested inside an a href element -->
+             
 			<div><form action=""><button id="downloads-button"><strong>TITLE & LINK</strong></button></form></div>
 			<div><form action=""><button id="downloads-button"><strong>TITLE & LINK</strong></button></form></div>
 			<div><form action=""><button id="downloads-button"><strong>TITLE & LINK</strong></button></form></div>
 			<div><form action=""><button id="downloads-button"><strong>TITLE & LINK</strong></button></form></div>
-		</section>
+		</section>-->
 
 
 		<!-- Testimonial #1 section -->
@@ -261,51 +263,46 @@
 
 
 	<!-- Footer -->	
-	<div class="footer">
-		<footer>
-			<section id="subscribe_2_outside">
-				<section id="subscribe_2">
-					<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
-						<h3>SUBSCRIBE TO THE NEWSLETTER</h3>
-						<p class="hidden">
-							<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
-						</p>
-						<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
-						<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
-					</form>
-				</section>
-				<section id="copyright_credit">
-					<p>&copy 2019 by Valerie Felder</p>
-					<p>Web Development by Valeria Felder</p>
-				</section>
+	<footer>
+		<section class="footer-box">
+			<section class="small-footer-box">
+				<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
+					<h3>VISIT VALERIE'S BLOG</h3>
+					<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
+					<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
+				</form>
 			</section>
+			<section class="small-footer-box">
+				<p>&copy 2019 by Valerie Felder</p>
+				<p>Web Development by Valeria Felder</p>
+			</section>
+		</section>
 
-			<section id="stay_connected_outside">
-				<section id="stay_connected">
-					<h3>STAY CONNECTED</h3>
-				</section>
-				<section id="contact_2">
-					<h3>CONTACT VALERIE</h3>
-					<p>valeriefelder@thecloseknitfamily.com</p>
-					<p>979.324.1865</p>
-				</section>
+		<section class="footer-box">
+			<section class="small-footer-box">
+				<h3>STAY CONNECTED</h3>
 			</section>
-			
-			<section id="useful_links">
-				<h3>USEFUL LINKS</h3>
-				
-				<p><a class="useful_links" href="../html/index.html">Home</a></p>
-				<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
-				<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
-				<p><a class="useful_links" href="">Core Values</a></p>
-				<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
-				<p><a class="useful_links" href="../html/about.html">About</a></p>
-				<p><a class="useful_links" href="">Photos</a></p>
-				
+			<section class="small-footer-box">
+				<h3>CONTACT VALERIE</h3>
+				<p>valeriefelder@thecloseknitfamily.com</p>
+				<p>979.324.1865</p>
 			</section>
+		</section>
+		
+		<section class="links-footer-box">
+			<h3>USEFUL LINKS</h3>
 			
-		</footer>
-	</div>
+			<p><a class="useful_links" href="../html/index.html">Home</a></p>
+			<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
+			<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
+			<p><a class="useful_links" href="../html/programs.html/#core-values">Core Values</a></p>
+			<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
+			<p><a class="useful_links" href="../html/about.html">About</a></p>
+			<p><a class="useful_links" href="../html/programs.html/#media-resources">Photos</a></p>
+			
+		</section>
+		
+</footer>
 
 
 </body>

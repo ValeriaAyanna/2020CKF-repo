@@ -30,7 +30,7 @@
 				</li>
 			   <li class="navbutton"><a href="../html/contact.html" class="nav-link">Contact</a></li>
 			   <li class="navbutton"><a href="../html/products.html" class="nav-link">Products</a></li>
-			   <li class="navbutton"><a href="" class="nav-link">Blog</a></li>
+			   <li class="navbutton"><a href="../html/blog.html" class="nav-link">Blog</a></li>
 		   </ul> 
 		</nav>
 	</header>
@@ -65,22 +65,25 @@
 					Builder who took military core values of integrity, respect and responsibility into the
 					home, mixing them with a mother's love to nurture her own 9 children.   </p>
 					
-					<div class="prod-button-div prod-1">
-						<a></a>
-					</div>
-					<a href="#"> <!-- was a div with plain text instead of button element-->
-						<button class="check_1 prod_price" disabled>Price: $12.49</button>
-					</a>	
+					<ul class="prod-price-links-1">
+						<li class="prod-price-1-button-div">
+							<a href="" class="prod-price-1-button">Price: $12.49</a>
+						</li>
+						
+						<li class="prod-amazon-1-button-div">
+							<a href="https://www.amazon.com/LIFE-STURDY-STITCHES-Makings-Close-Knit-ebook/dp/B07D3CQ5CZ/ref=sr_1_1?ie=UTF8&qid=1527568922&sr=8-1&keywords=life+in+sturdy+stitches"
+							target="_blank" class="prod-amazon-1-button">Buy on Amazon!</a>
+						</li>
+		
+						<li class="prod-bn-1-button-div">
+							<a href="https://www.barnesandnoble.com/w/life-in-sturdy-stitches-valerie-felder/1128594861?ean=9781545633069"
+							target="_blank" class="prod-bn-1-button">Buy on Barnes & Noble!</a>
+						</li>
+
+					</ul>
+					
 	
-					<a href="https://www.amazon.com/LIFE-STURDY-STITCHES-Makings-Close-Knit-ebook/dp/B07D3CQ5CZ/ref=sr_1_1?ie=UTF8&qid=1527568922&sr=8-1&keywords=life+in+sturdy+stitches"
-					target="_blank">
-						<button id="prod_button" class="check_2">Buy on Amazon!</button>
-					</a>
-	
-					<a href="https://www.barnesandnoble.com/w/life-in-sturdy-stitches-valerie-felder/1128594861?ean=9781545633069"
-					target="_blank">
-							<button id="prod_button" class="check_3">Buy on Barnes & Noble!</button>
-					</a>
+					
 		
 				</div>
 			</section>
@@ -98,18 +101,24 @@
 					A bonus communications-builder section for parents is also included. This easy-to-use book helps parents select topics
 					pertaining to the personality, age or interests of their family. It serves families with children of all ages.</p>
 	
-					<a href="#"> <!-- was a div with plain text instead of button element-->
-						<button class="check_1 prod_price" disabled>Price: $16.99</button>
-					</a>	
+					<ul class="prod-price-links-2">
+						<li class="prod-price-2-button-div">
+							<a href="" class="prod-price-2-button">Price: $16.99</a>
+						</li>
 	
-					<a href="https://www.amazon.com/Table-Talk-Guidebook-Christian-Living/dp/1983659444/ref=sr_1_1?ie=UTF8&qid=1527599304&sr=8-1&keywords=Table+Talk+Guidebook+Felder"
-					target="_blank">
-						<button id="prod_button" class="check_2">Buy on Amazon!</button>
-					</a>
+						<li class="prod-amazon-2-button-div">
+							<a href="https://www.amazon.com/Table-Talk-Guidebook-Christian-Living/dp/1983659444/ref=sr_1_1?ie=UTF8&qid=1527599304&sr=8-1&keywords=Table+Talk+Guidebook+Felder"
+							target="_blank" class="prod-amazon-2-button">Buy on Amazon!</a>
+						</li>
 	
-					<a href="#">
-							<button id="unavailable" class="check_3 unavailable" disabled><del color="#707070">Buy on Barnes & Noble!</del></button>
-					</a>
+						<li class="prod-bn-2-button-div">
+							<a  class="prod-bn-2-button">Buy on Barnes & Noble!</a>
+						</li>
+
+					</ul>
+					
+	
+					
 		
 				</div>
 			</section>
@@ -119,51 +128,46 @@
 
 	</div>
 
-	<div class="footer">
-		<footer>
-			<section id="subscribe_2_outside">
-				<section id="subscribe_2">
-					<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
-						<h3>SUBSCRIBE TO THE NEWSLETTER</h3>
-						<p class="hidden">
-							<label>Don�t fill this out if you're human: <input name="bot-field" /></label>
-						</p>
-						<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
-						<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
-					</form>
-				</section>
-				<section id="copyright_credit">
-					<p>&copy 2019 by Valerie Felder</p>
-					<p>Web Development by Valeria Felder</p>
-				</section>
+	<footer>
+		<section class="footer-box">
+			<section class="small-footer-box">
+				<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="footer_form">
+					<h3>VISIT VALERIE'S BLOG</h3>
+					<input id="footer_subscribe_window" type="email" name="email" placeholder="example@email.com" />
+					<input id="footer_subscribe_button" type="submit" name="subscribe" value=">>" />
+				</form>
 			</section>
+			<section class="small-footer-box">
+				<p>&copy 2019 by Valerie Felder</p>
+				<p>Web Development by Valeria Felder</p>
+			</section>
+		</section>
 
-			<section id="stay_connected_outside">
-				<section id="stay_connected">
-					<h3>STAY CONNECTED</h3>
-				</section>
-				<section id="contact_2">
-					<h3>CONTACT VALERIE</h3>
-					<p>valeriefelder@thecloseknitfamily.com</p>
-					<p>979.324.1865</p>
-				</section>
+		<section class="footer-box">
+			<section class="small-footer-box">
+				<h3>STAY CONNECTED</h3>
 			</section>
-			
-			<section id="useful_links">
-				<h3>USEFUL LINKS</h3>
-				
-				<p><a class="useful_links" href="../html/index.html">Home</a></p>
-				<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
-				<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
-				<p><a class="useful_links" href="">Core Values</a></p>
-				<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
-				<p><a class="useful_links" href="../html/about.html">About</a></p>
-				<p><a class="useful_links" href="">Photos</a></p>
-				
+			<section class="small-footer-box">
+				<h3>CONTACT VALERIE</h3>
+				<p>valeriefelder@thecloseknitfamily.com</p>
+				<p>979.324.1865</p>
 			</section>
+		</section>
+		
+		<section class="links-footer-box">
+			<h3>USEFUL LINKS</h3>
 			
-		</footer>
-	</div>
+			<p><a class="useful_links" href="../html/index.html">Home</a></p>
+			<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
+			<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
+			<p><a class="useful_links" href="../html/programs.html/#core-values">Core Values</a></p>
+			<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
+			<p><a class="useful_links" href="../html/about.html">About</a></p>
+			<p><a class="useful_links" href="../html/programs.html/#media-resources">Photos</a></p>
+			
+		</section>
+		
+</footer>
 
 
 </body>
