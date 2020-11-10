@@ -932,30 +932,35 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 }
 
 .core-values-wrapper {
-	height: 90vh;
+	height: 80vh;
 }
 
 .core-values-blocks {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-auto-rows: minmax(100%, auto);
+	grid-auto-rows: minmax(10em, auto);
 	padding-left: 4em;
 	padding-right: 4em;
 	padding-top: 2em;
 	padding-bottom: 2em;
 	text-align: center;
+	margin-top: 4em;
 }
 
 .block {
 	background-color: var(--camel);
-	border: 2px solid var(--deep-brown);
+	/*border: 2px solid var(--deep-brown);*/
 	margin-right: 0.5em;
 	margin-left: 0.5em;
 	margin-top: 1em;
 	padding-right: 1em;
 	padding-left: 1em;
-	padding-bottom: 0.5em;
+	/*padding-bottom: 0.5em;*/
 	padding-top: 0.5em;
+}
+
+.core-values-text {
+	padding-top: 1em;
 }
 
 /*-------------MEDIA RESOURCES--------------*/
