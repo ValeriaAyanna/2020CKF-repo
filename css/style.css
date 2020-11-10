@@ -975,6 +975,7 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	padding-top: 2em;
 }
 
+
 .media-block {
 	margin-right: 0.5em;
 	margin-left: 0.5em;
@@ -985,25 +986,36 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	padding-left: 2em;
 }
 
-ul.downloads-list {
-	list-style-type: none;
+div.downloads-list {
+	
+	text-align: center;
+	
+}
+
+div.video-list {
 	text-align: center;
 }
 
-ul.video-list {
-	list-style-type: none;
+div.gallery-grid {
+	text-align: center;
 }
 
-ul.gallery-grid {
-	list-style-type: none;
-}
-
-ul.downloads-list li.download-prev {
+div.downloads-list div.download-prev {
 	background-color: var(--bronze-gold);
+	margin-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
-ul.video-list li.video-link {
+div.video-list div.video-link {
 	background-color: var(--bronze-gold);
+	margin-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 /*------------------COMING SOON------------------*/
