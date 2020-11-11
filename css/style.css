@@ -476,6 +476,30 @@ h3.landingText {
 	padding-left: 3em;
 }
 
+
+
+.footer-button {
+	background-color: var(--whiteish);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 4em;
+	padding-left: 4em;
+	color: var(--blackish);
+	text-decoration: none;
+	border: 2px solid var(--deep-brown);
+}
+
+.footer-button:hover {
+	background-color: var(--camel);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 4em;
+	padding-left: 4em;
+	color: var(--whiteish);
+	border: 2px solid var(--whiteish);
+	text-decoration: none;
+}
+
 footer {
 	background-color: var(--camel);
 	display: grid;
@@ -972,7 +996,7 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	height: 60vh;
 	padding-right: 4em;
 	padding-left: 4em;
-	padding-top: 2em;
+	padding-top: 8em;
 }
 
 
