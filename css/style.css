@@ -476,7 +476,23 @@ h3.landingText {
 	padding-left: 3em;
 }
 
+.footer-icon-list {
+	
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: minmax(100%, auto);
+	
+}
 
+.yt-icon {
+	height: 2em;
+}
+
+.footer-icon-box {
+	width: 2em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
 
 .footer-button {
 	background-color: var(--whiteish);
