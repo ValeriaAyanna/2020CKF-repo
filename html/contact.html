@@ -20,14 +20,10 @@
 	<header id="header-section">
 		<nav id="header-nav">
 		   <ul class="navbar">
-			   <li class="navbutton"><a href="../html/index.html" class="nav-link"><img src="img/logo.png" alt="logo" /></a></li>
-
 			   <li class="navbutton"><a href="../html/index.html" class="nav-link-active">Home</a></li>
 			   <li class="navbutton"><a href="../html/about.html" class="nav-link">About</a></li>
-			   <li class="navbutton">
-				   <a href="../html/programs.html" class="nav-link">Programs & Resources</a>
-				   
-				</li>
+			   <li class="navbutton"><a href="../html/resources.html" class="nav-link">Resources</a></li>
+			   <li class="navbutton"><a href="../html/services.html" class="nav-link">Programs</a></li>
 			   <li class="navbutton"><a href="../html/contact.html" class="nav-link">Contact</a></li>
 			   <li class="navbutton"><a href="../html/products.html" class="nav-link">Products</a></li>
 			   <li class="navbutton"><a href="../html/blog.html" class="nav-link">Blog</a></li>
@@ -45,42 +41,45 @@
 			</section>
 
 			<!-- Contact Form using Netlify -->
-			<section class="contact-form">
-				<form name="contact" method="POST" action="contact.php" data-netlify="true" id="contact_form">
-					<h2 class="contact-text">Contact Form</h2>
-
-					<div class="form-lines">
-						<label for="fname">Name:</label>
-						<div class="name-block">
-							<input type="text" id="fname-field" name="firstname" placeholder="First Name..." required>
-							<input type="text" id="lname-field" name="lastname" placeholder="Last Name..." required>
+			<div class="contact-form-div">
+				<section class="contact-form">
+					<form name="contact" method="POST" action="contact.php" data-netlify="true" id="contact_form">
+						<h2 class="contact-text">Contact Form</h2>
+	
+						<div class="form-lines">
+							<label for="fname">Name:</label>
+							<div class="name-block">
+								<input type="text" id="fname-field" name="firstname" placeholder="First Name..." required>
+								<input type="text" id="lname-field" name="lastname" placeholder="Last Name..." required>
+							</div>
 						</div>
-					</div>
-					
-					
-
-					<div class="form-lines">
-						<label for="email">Email:</label>
-						<input type="text" id="email field" name="senderEmail" placeholder="name@example.com" required>
-					</div>
-				   
-					<div class="form-lines"> 
-						<label for="message">Message:</label>
-						<textarea id="message field" name="contactMessage" placeholder="Your message..." required></textarea>
 						
-					</div>
-					<div class="form-lines">
-						<label id="contact_form_label"> Verification: </label>
-						<div data-netlify-recaptcha="true"></div>
-					</div>
-
-					<input type="submit" name="submit" class="contact-page-button">
-					<!--<div class="contact-page-button-div"><a href="#" class="contact-page-button">Submit</a></div>
--->
-					
-					
-				</form>
-			</section>
+						
+	
+						<div class="form-lines">
+							<label for="email">Email:</label>
+							<input type="text" id="email field" name="senderEmail" placeholder="name@example.com" required>
+						</div>
+					   
+						<div class="form-lines"> 
+							<label for="message">Message:</label>
+							<textarea id="message field" name="contactMessage" placeholder="Your message..." required></textarea>
+							
+						</div>
+						<div class="form-lines">
+							<label id="contact_form_label"> Verification: </label>
+							<div data-netlify-recaptcha="true"></div>
+						</div>
+	
+						<input type="submit" name="submit" class="contact-page-button">
+						<!--<div class="contact-page-button-div"><a href="#" class="contact-page-button">Submit</a></div>
+	-->
+						
+						
+					</form>
+				</section>
+			</div>
+			
 		</section>
 
 		
@@ -140,12 +139,12 @@
 			<h3>USEFUL LINKS</h3>
 			
 			<p><a class="useful_links" href="../html/index.html">Home</a></p>
-			<p><a class="useful_links" href="../html/programs.html">Programs</a></p>
+			<p><a class="useful_links" href="../html/services.html">Programs</a></p>
 			<p><a class="useful_links" href="../html/blog.html">Blog</a></p>
-			<p><a class="useful_links" href="../html/programs.html#CoreValuesAnchor">Core Values</a></p>
+			<p><a class="useful_links" href="../html/resources.html">Core Values</a></p>
 			<p><a class="useful_links" href="../html/contact.html">Book Valerie & Contact</a></p>
 			<p><a class="useful_links" href="../html/about.html">About</a></p>
-			<p><a class="useful_links" href="../html/programs.html#MediaResourcesAnchor">Photos</a></p>
+			<p><a class="useful_links" href="../html/resources.html#MediaResourcesAnchor">Photos</a></p>
 			
 		</section>
 		

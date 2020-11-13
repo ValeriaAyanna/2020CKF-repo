@@ -157,20 +157,23 @@ h3.landingText {
 	z-index: 2;
 }
 
+.intro-boxes-div {
+	padding-left: 9em;
+	padding-right: 9em;
+	height: 30rem;
+	z-index: 3;
+	position: absolute; /*pops above the headshot box*/
+}
+
 #intro-boxes{
 	display: grid;
-	position: absolute;/*pops this section above the headshot*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(100%, auto);
     background-color: var(--deep-brown);
-    
-    width: 75%; /*orig 80%*/
-    height: 25rem;
-	margin-right: 9em; /*orig 9em*/
-	margin-left: 11em; /*orig 9em*/
 	margin-top: -5%;
 	z-index: 3;
 	justify-content: center;
+	height: 25em;
 }
 
 
@@ -547,18 +550,23 @@ footer {
 }
 
 /*----------------ABOUT-----------------*/
+.about-box-div {
+	padding-left: 6em;
+	padding-right: 6em;
+	position: absolute; /*pops this section above the headshot*/
+	
+	z-index: 3;
+	margin-bottom: 5em;
+}
+
 .about-box {
 	display: grid;
-	position: absolute; /*pops this section above the headshot*/
     grid-template-columns: 3fr 1fr;
 	grid-auto-rows: minmax(100%, auto);	
 	background-color: var(--whiteish);
-	margin-left: 6em;
-	margin-right: 6em;
 	margin-top: -5%;
 	z-index: 3;
 	margin-bottom: 5em;
-	height: 22em;
 }
 
 .about-text {
@@ -571,6 +579,7 @@ footer {
 	border-bottom: 2px solid var(--deep-brown);
 	border-left: 2px solid var(--deep-brown);
 	border-top: 2px solid var(--deep-brown);
+	display: inline-block;
 }
 
 .about-sidebar {
@@ -652,14 +661,6 @@ footer {
 	top: 0;
 }
 
-.social-media-icons {
-
-}
-
-.social_media_icon_box {
-
-}
-
 ul.social-media-icons {
     list-style-type: none;
     margin: 0;
@@ -693,10 +694,38 @@ ul.social-media-icons li {
 			
 }
 
+/*
+.coming-soon {
+	height: 70vh;
+	background-color: var(--blackish);
+	padding-top: 8em;
+	padding-left: 8em;
+	padding-right: 8em;
+}
+
+.coming-soon-text {
+	padding-right: 3em;
+	padding-left: 3em;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	border: 5px solid var(--bronze-gold);
+	background-color: var(--whiteish);
+	text-align: center;
+}
+*/
+
+.contact-form-div {
+	padding-right: 15em;
+	padding-left: 15em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	height: 100vh;
+	text-align: center;
+}
+
 .contact-form {
+	position: relative;
 	background: var(--camel);
-	margin-left: 15em;
-	margin-right: 15em;
 	padding-left: 2em;
 	padding-right: 2em;
 	padding-top: 1em;
@@ -704,7 +733,7 @@ ul.social-media-icons li {
 	margin-top: 1em;
 	margin-bottom: 5em;
 	box-shadow: 23px 23px 36px var(--blackish);
-	width: 50em;
+	
 }
 
 #fname-field {
