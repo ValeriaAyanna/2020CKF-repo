@@ -815,6 +815,13 @@ textarea {
 
 
 /*----------------PRODUCTS-----------------*/
+.products-wrapper {
+	padding-left: 8em;
+	padding-right: 8em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
 .prod_img {
 	width: 100%;
 	background: var(--whiteish);
@@ -824,34 +831,37 @@ textarea {
 	display: grid;
 	grid-template-columns: 1fr 5fr;
 	grid-auto-rows: minmax(100%, auto);	
-	margin-left: 8em;
-	margin-right: 8em;
 	border: 2px solid var(--bronze-gold);
 	background: var(--whiteish);
-	margin-bottom: 2em;
-	height: 16em;
 }
 
 .products-div {
-	margin-top: 6em;
-	margin-bottom: 10em;
+	padding-bottom: 4em;
+	padding-top: 4em;
 }
+
+
 
 .prod_descrip {
 	background: rgb(209,138,44, 0.2);
 	padding-left: 1em;
 	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	font-size: 1.1em;
 }
 
 ul.prod-price-links-1 {
 	list-style-type: none;
 	margin-top: 3em;
+	
 }
 
 ul.prod-price-links-2 {
 	list-style-type: none;
 	margin-top: 2em;
+	background-color: red;
+	
 }
 
 ul.prod-price-links-1 li, ul.prod-price-links-2 li {
@@ -864,8 +874,8 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	text-decoration: none;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding-right: 2em;
-	padding-left: 2em;
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .prod-amazon-1-button, .prod-amazon-2-button {
@@ -875,8 +885,8 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	color: var(--deep-brown);
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding-right: 2em;
-	padding-left: 2em;
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .prod-amazon-1-button:hover, .prod-amazon-2-button:hover {
@@ -886,8 +896,8 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	color: var(--deep-brown);
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding-right: 2em;
-	padding-left: 2em;
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .prod-bn-1-button {
@@ -897,8 +907,8 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	color: var(--deep-brown);
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding-right: 2em;
-	padding-left: 2em;
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .prod-bn-1-button:hover {
@@ -908,8 +918,8 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	color: var(--deep-brown);
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding-right: 2em;
-	padding-left: 2em;
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .prod-bn-2-button {
@@ -919,8 +929,9 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	color: var(--deep-brown);
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding-right: 2em;
-	padding-left: 2em;
+	padding-right: 1em;
+	padding-left: 1em;
+	font-size: 1em;
 }
 
 .prod-price-1-button-div, .prod-price-2-button-div {
