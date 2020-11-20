@@ -27,7 +27,7 @@ body {
     grid-auto-rows: minmax(100%, auto);*/
     background-color: var(--whiteish);
     width: 100%;
-    height: 100vh; /*compensates for the header, keeping full page*/
+    /*height: 100vh; compensates for the header, keeping full page*/
 }
 
 
@@ -163,6 +163,14 @@ h3.landingText {
 	height: 30rem;
 	z-index: 3;
 	position: absolute; /*pops above the headshot box*/
+}
+
+.buffer {
+	background-color: var(--whiteish);
+	z-index: 2;
+	height: 30em;
+	position: relative;
+	top: 0;
 }
 
 #intro-boxes{
@@ -362,7 +370,7 @@ h3.landingText {
 	background-color: var(--camel);
 	position: relative;
 	text-align: center;
-	margin-top: 15%;
+	/*margin-top: 15%;*/
 	height: 10em;
 	padding-top: 3em;
 	
@@ -559,6 +567,14 @@ footer {
 	
 }
 
+.about-buffer {
+	background-color: var(--whiteish);
+	z-index: 2;
+	height: 30em;
+	position: relative;
+	top: 0;
+}
+
 .about-box {
 	display: grid;
     grid-template-columns: 3fr 1fr;
@@ -694,25 +710,6 @@ ul.social-media-icons li {
 			
 }
 
-/*
-.coming-soon {
-	height: 70vh;
-	background-color: var(--blackish);
-	padding-top: 8em;
-	padding-left: 8em;
-	padding-right: 8em;
-}
-
-.coming-soon-text {
-	padding-right: 3em;
-	padding-left: 3em;
-	padding-top: 3em;
-	padding-bottom: 3em;
-	border: 5px solid var(--bronze-gold);
-	background-color: var(--whiteish);
-	text-align: center;
-}
-*/
 
 .contact-form-div {
 	padding-right: 15em;
@@ -851,22 +848,14 @@ textarea {
 	font-size: 1.1em;
 }
 
-ul.prod-price-links-1 {
-	list-style-type: none;
-	margin-top: 3em;
-	
+.prod-buttons-section {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: minmax(100%, auto);
+	text-align: center;
+	margin-bottom: 1em;
 }
 
-ul.prod-price-links-2 {
-	list-style-type: none;
-	margin-top: 2em;
-	background-color: red;
-	
-}
-
-ul.prod-price-links-1 li, ul.prod-price-links-2 li {
-	display: inline;
-}
 
 .prod-price-1-button, .prod-price-2-button {
 	background-color: var(--deep-brown);
@@ -876,6 +865,7 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	padding-bottom: 1em;
 	padding-right: 1em;
 	padding-left: 1em;
+	font-size: 1.2vw;
 }
 
 .prod-amazon-1-button, .prod-amazon-2-button {
@@ -887,6 +877,7 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	padding-bottom: 1em;
 	padding-right: 1em;
 	padding-left: 1em;
+	font-size: 1.2vw;
 }
 
 .prod-amazon-1-button:hover, .prod-amazon-2-button:hover {
@@ -898,6 +889,7 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	padding-bottom: 1em;
 	padding-right: 1em;
 	padding-left: 1em;
+	font-size: 1.2vw;
 }
 
 .prod-bn-1-button {
@@ -909,6 +901,7 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	padding-bottom: 1em;
 	padding-right: 1em;
 	padding-left: 1em;
+	font-size: 1.2vw;
 }
 
 .prod-bn-1-button:hover {
@@ -920,6 +913,7 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	padding-bottom: 1em;
 	padding-right: 1em;
 	padding-left: 1em;
+	font-size: 1.2vw;
 }
 
 .prod-bn-2-button {
@@ -932,27 +926,20 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 	padding-right: 1em;
 	padding-left: 1em;
 	font-size: 1em;
+	font-size: 1.2vw;
 }
 
 .prod-price-1-button-div, .prod-price-2-button-div {
-	width: 10em;
-	margin-right: 2em;
 	
 }
 
 .prod-amazon-1-button-div, .prod-amazon-2-button-div {
-	width: 10em;
-	margin-right: 2em;
 }
 
 .prod-bn-1-button-div {
-	width: 10em;
-	margin-right: 2em;
 }
 
 .prod-bn-2-button-div {
-	width: 10em;
-	margin-right: 2em;
 }
 
 /*-----------------PROGRAMS-----------------*/
@@ -1060,8 +1047,6 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 
 .team-building-right {
 	text-align: center;
-	padding-top: 2em;
-	padding-bottom: 2em;
 }
 
 .team-links {
@@ -1074,6 +1059,11 @@ ul.prod-price-links-1 li, ul.prod-price-links-2 li {
 
 .team-links-div {
 	margin-top: 2em;
+}
+
+.services-icon {
+	width: 50%;
+	height: 50%;
 }
 
 .tuff-mamma-wrapper {
@@ -1323,7 +1313,213 @@ div.video-list div.video-link {
 
 
 
+/*---------------MOBILE and TABLET---------------*/
+/*Tablet*/
+@media only screen and (max-device-width: 768px){
+	.navbutton {
+		margin-top: 3rem;
+		margin-right: 2rem;
+		margin-bottom: 3rem;
+		margin-left: 1rem;
+	}
 
+	/*--------ABOUT--------*/
+	.about-box-div {
+		padding-left: 3em;
+		padding-right: 3em;
+		position: absolute; /*pops this section above the headshot*/
+		
+		z-index: 3;
+		
+	}
+	
+	.about-buffer {
+		background-color: var(--whiteish);
+		z-index: 2;
+		height: 40em;
+		position: relative;
+		top: 0;
+	}
+	
+	.about-testimonial-buffer {
+		height: 5em;
+	}
+
+	/*---------RESOURCES----------*/
+	.resources-top {
+		height: 10em;
+	}
+
+	.resources-text {
+		padding-top: 3em;
+	}
+
+	.core-values-blocks {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: minmax(15em, auto);
+		padding-left: 2em;
+		padding-right: 2em;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		text-align: center;
+	}
+
+	.media-resources-wrapper {
+		padding-right: 2em;
+		padding-left: 2em;
+		padding-top: 4em;
+		padding-bottom: 2em;
+	}
+
+	.resources-testimonial-buffer {
+		height: 5em;
+	}
+
+	/*----------PROGRAMS---------*/
+	.programs-top {
+		height: 10em;
+	}
+
+	.programs-text {
+		padding-top: 3em;
+	}
+
+	.tuff-mamma-1, .tuff-mamma-2, .tuff-mamma-3 {
+		font-size: 1.0em;
+	}
+
+	.res-left, .team-building-left {
+		font-size: 1.2em;
+	}
+
+	/*-----------CONTACT-----------*/
+	.contact-form-div {
+		padding-right: 5em;
+		padding-left: 5em;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		height: 100vh;
+		text-align: center;
+	}
+
+	.contact-section {
+		height: 50em;
+	}
+
+	/*------------PRODUCTS-------------*/
+	.products-wrapper {
+		padding-left: 2em;
+		padding-right: 2em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.prod-price-1-button, .prod-price-2-button {
+		background-color: var(--deep-brown);
+		color: var(--whiteish);
+		text-decoration: none;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+		padding-left: 1em;
+		font-size: 1.8vw;
+	}
+	
+	.prod-amazon-1-button, .prod-amazon-2-button {
+		text-decoration: none;
+		background-color: var(--bronze-gold);
+		border: 2px solid var(--deep-brown);
+		color: var(--deep-brown);
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+		padding-left: 1em;
+		font-size: 1.8vw;
+	}
+	
+	.prod-amazon-1-button:hover, .prod-amazon-2-button:hover {
+		text-decoration: none;
+		background-color: var(--bronze-gold);
+		border: 2px solid var(--whiteish);
+		color: var(--deep-brown);
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+		padding-left: 1em;
+		font-size: 1.8vw;
+	}
+	
+	.prod-bn-1-button {
+		text-decoration: none;
+		background-color: var(--bronze-gold);
+		border: 2px solid var(--deep-brown);
+		color: var(--deep-brown);
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+		padding-left: 1em;
+		font-size: 1.8vw;
+	}
+	
+	.prod-bn-1-button:hover {
+		text-decoration: none;
+		background-color: var(--bronze-gold);
+		border: 2px solid var(--whiteish);
+		color: var(--deep-brown);
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+		padding-left: 1em;
+		font-size: 1.8vw;
+	}
+	
+	.prod-bn-2-button {
+		text-decoration: line-through;
+		background-color: var(--bronze-gold);
+		border: 2px solid var(--deep-brown);
+		color: var(--deep-brown);
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+		padding-left: 1em;
+		font-size: 1em;
+		font-size: 1.8vw;
+	}
+	/*--------COMING SOON-------*/
+	.coming-soon {
+		height: 70vh;
+		background-color: var(--blackish);
+		padding-top: 2em;
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	
+	.coming-soon-text {
+		padding-right: 3em;
+		padding-left: 3em;
+		padding-top: 3em;
+		padding-bottom: 3em;
+		border: 5px solid var(--bronze-gold);
+		background-color: var(--whiteish);
+		text-align: center;
+	}
+}
+
+/*Mobile L*/
+@media only screen and (max-device-width: 425px){
+
+}
+
+/*Mobile M*/
+@media only screen and (max-device-width: 375px){
+
+}
+
+/*Mobile S*/
+@media only screen and (max-device-width: 320px){
+
+}
 
 
 
